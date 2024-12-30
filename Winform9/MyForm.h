@@ -18,7 +18,7 @@ namespace Winform9 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -27,13 +27,13 @@ namespace Winform9 {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm()
 		{
@@ -43,9 +43,9 @@ namespace Winform9 {
 			}
 		}
 	private:
-		// Массив вопросов
+		// РњР°СЃСЃРёРІ РІРѕРїСЂРѕСЃРѕРІ
 		std::vector<Quest>* Questions = new std::vector<Quest>();
-		// Массив из индексов Questions в рандомном порядке
+		// РњР°СЃСЃРёРІ РёР· РёРЅРґРµРєСЃРѕРІ Questions РІ СЂР°РЅРґРѕРјРЅРѕРј РїРѕСЂСЏРґРєРµ
 		std::vector<int>* RandIndex = new std::vector<int>();
 	private: System::Windows::Forms::Label^ lblQuest;
 
@@ -80,14 +80,14 @@ namespace Winform9 {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -115,7 +115,7 @@ namespace Winform9 {
 			this->lblQuest->Name = L"lblQuest";
 			this->lblQuest->Size = System::Drawing::Size(44, 13);
 			this->lblQuest->TabIndex = 0;
-			this->lblQuest->Text = L"Вопрос";
+			this->lblQuest->Text = L"Р’РѕРїСЂРѕСЃ";
 			// 
 			// countBox
 			// 
@@ -146,7 +146,7 @@ namespace Winform9 {
 			this->answerGroup->Size = System::Drawing::Size(62, 117);
 			this->answerGroup->TabIndex = 3;
 			this->answerGroup->TabStop = false;
-			this->answerGroup->Text = L"Ответы:";
+			this->answerGroup->Text = L"РћС‚РІРµС‚С‹:";
 			// 
 			// answerD
 			// 
@@ -203,7 +203,7 @@ namespace Winform9 {
 			this->lblShortAnswer->Name = L"lblShortAnswer";
 			this->lblShortAnswer->Size = System::Drawing::Size(89, 13);
 			this->lblShortAnswer->TabIndex = 5;
-			this->lblShortAnswer->Text = L"Короткий ответ:";
+			this->lblShortAnswer->Text = L"РљРѕСЂРѕС‚РєРёР№ РѕС‚РІРµС‚:";
 			// 
 			// actionBtn
 			// 
@@ -211,7 +211,7 @@ namespace Winform9 {
 			this->actionBtn->Name = L"actionBtn";
 			this->actionBtn->Size = System::Drawing::Size(142, 43);
 			this->actionBtn->TabIndex = 6;
-			this->actionBtn->Text = L"Далее";
+			this->actionBtn->Text = L"Р”Р°Р»РµРµ";
 			this->actionBtn->UseVisualStyleBackColor = true;
 			this->actionBtn->Click += gcnew System::EventHandler(this, &MyForm::actionBtn_Click);
 			// 
@@ -232,7 +232,7 @@ namespace Winform9 {
 			this->Controls->Add(this->countBox);
 			this->Controls->Add(this->lblQuest);
 			this->Name = L"MyForm";
-			this->Text = L"Тест";
+			this->Text = L"РўРµСЃС‚";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			this->answerGroup->ResumeLayout(false);
 			this->answerGroup->PerformLayout();
@@ -280,37 +280,37 @@ namespace Winform9 {
 		}
 
 		void QuestionsLoad() {
-			// 1 вопрос
-			Questions->push_back(Quest("Обязательно ли писать 'using namespace std;' для работы с string? \n \
-							Варианты ответа: [A] Да; [B] Нет;", YesNo, "B"));
-			// 2 вопрос
-			Questions->push_back(Quest("Какой из следующих операторов используется для присваивания значений переменным в C++? \n \
-					Варианты ответа: [A] =; [B] -=; [C] +=; [D] ==;", OneAnswer, "A"));
-			// 3 вопрос
-			Questions->push_back(Quest("Какой из следующих типов данных используется для хранения целых чисел в C++? \n \
-							Варианты ответа: [A] int; [B] long; [C] float; [D] double;", SomeAnswers, "AB"));
-			// 4 вопрос
-			Questions->push_back(Quest("Какой оператор используется для умножения в C++?", ShortAnswer, "*"));
-			// 5 вопрос
-			Questions->push_back(Quest("Какой оператор используется для сложения в C++?", ShortAnswer, "+"));
-			// 6 вопрос
-			Questions->push_back(Quest("Какой тип данных имеет метод stoi?", ShortAnswer, "string"));
-			// 7 вопрос
-			Questions->push_back(Quest("К какому пространству имен принадлежит vector<>?", ShortAnswer, "std"));
-			// 8 вопрос
-			Questions->push_back(Quest("Какой оператор используется для логического НЕ C++?", ShortAnswer, "!"));
-			// 9 вопрос
-			Questions->push_back(Quest("Какой оператор используется для проверки неравенства в C++", ShortAnswer, "!="));
-			// 10 вопрос
-			Questions->push_back(Quest("Какой оператор используется для проверки меньше в C++?", ShortAnswer, "<"));
+			// 1 РІРѕРїСЂРѕСЃ
+			Questions->push_back(Quest("РћР±СЏР·Р°С‚РµР»СЊРЅРѕ Р»Рё РїРёСЃР°С‚СЊ 'using namespace std;' РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ string? \n \
+							Р’Р°СЂРёР°РЅС‚С‹ РѕС‚РІРµС‚Р°: [A] Р”Р°; [B] РќРµС‚;", YesNo, "B"));
+			// 2 РІРѕРїСЂРѕСЃ
+			Questions->push_back(Quest("РљР°РєРѕР№ РёР· СЃР»РµРґСѓСЋС‰РёС… РѕРїРµСЂР°С‚РѕСЂРѕРІ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґР»СЏ РїСЂРёСЃРІР°РёРІР°РЅРёСЏ Р·РЅР°С‡РµРЅРёР№ РїРµСЂРµРјРµРЅРЅС‹Рј РІ C++? \n \
+					Р’Р°СЂРёР°РЅС‚С‹ РѕС‚РІРµС‚Р°: [A] =; [B] -=; [C] +=; [D] ==;", OneAnswer, "A"));
+			// 3 РІРѕРїСЂРѕСЃ
+			Questions->push_back(Quest("РљР°РєРѕР№ РёР· СЃР»РµРґСѓСЋС‰РёС… С‚РёРїРѕРІ РґР°РЅРЅС‹С… РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґР»СЏ С…СЂР°РЅРµРЅРёСЏ С†РµР»С‹С… С‡РёСЃРµР» РІ C++? \n \
+							Р’Р°СЂРёР°РЅС‚С‹ РѕС‚РІРµС‚Р°: [A] int; [B] long; [C] float; [D] double;", SomeAnswers, "AB"));
+			// 4 РІРѕРїСЂРѕСЃ
+			Questions->push_back(Quest("РљР°РєРѕР№ РѕРїРµСЂР°С‚РѕСЂ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґР»СЏ СѓРјРЅРѕР¶РµРЅРёСЏ РІ C++?", ShortAnswer, "*"));
+			// 5 РІРѕРїСЂРѕСЃ
+			Questions->push_back(Quest("РљР°РєРѕР№ РѕРїРµСЂР°С‚РѕСЂ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґР»СЏ СЃР»РѕР¶РµРЅРёСЏ РІ C++?", ShortAnswer, "+"));
+			// 6 РІРѕРїСЂРѕСЃ
+			Questions->push_back(Quest("РљР°РєРѕР№ С‚РёРї РґР°РЅРЅС‹С… РёРјРµРµС‚ РјРµС‚РѕРґ stoi?", ShortAnswer, "string"));
+			// 7 РІРѕРїСЂРѕСЃ
+			Questions->push_back(Quest("Рљ РєР°РєРѕРјСѓ РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІСѓ РёРјРµРЅ РїСЂРёРЅР°РґР»РµР¶РёС‚ vector<>?", ShortAnswer, "std"));
+			// 8 РІРѕРїСЂРѕСЃ
+			Questions->push_back(Quest("РљР°РєРѕР№ РѕРїРµСЂР°С‚РѕСЂ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґР»СЏ Р»РѕРіРёС‡РµСЃРєРѕРіРѕ РќР• C++?", ShortAnswer, "!"));
+			// 9 РІРѕРїСЂРѕСЃ
+			Questions->push_back(Quest("РљР°РєРѕР№ РѕРїРµСЂР°С‚РѕСЂ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґР»СЏ РїСЂРѕРІРµСЂРєРё РЅРµСЂР°РІРµРЅСЃС‚РІР° РІ C++", ShortAnswer, "!="));
+			// 10 РІРѕРїСЂРѕСЃ
+			Questions->push_back(Quest("РљР°РєРѕР№ РѕРїРµСЂР°С‚РѕСЂ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РґР»СЏ РїСЂРѕРІРµСЂРєРё РјРµРЅСЊС€Рµ РІ C++?", ShortAnswer, "<"));
 		}
 
 		void RandIndexLoad() {
-			// Заполняем массив числами от 0 до Questions->size() - 1
+			// Р—Р°РїРѕР»РЅСЏРµРј РјР°СЃСЃРёРІ С‡РёСЃР»Р°РјРё РѕС‚ 0 РґРѕ Questions->size() - 1
 			for (int i = 0; i < Questions->size(); ++i) {
 				RandIndex->push_back(i);
 			}
-			// Рандомно меняем местами элементы массива
+			// Р Р°РЅРґРѕРјРЅРѕ РјРµРЅСЏРµРј РјРµСЃС‚Р°РјРё СЌР»РµРјРµРЅС‚С‹ РјР°СЃСЃРёРІР°
 			srand(time(NULL));
 			std::random_shuffle(RandIndex->begin(), RandIndex->end());
 		}
@@ -332,7 +332,7 @@ namespace Winform9 {
 
 		System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
 			countBox->Text = Convert::ToString(iter + 1);
-			// Заполняем массивы с вопросами и порядком вывода вопросов
+			// Р—Р°РїРѕР»РЅСЏРµРј РјР°СЃСЃРёРІС‹ СЃ РІРѕРїСЂРѕСЃР°РјРё Рё РїРѕСЂСЏРґРєРѕРј РІС‹РІРѕРґР° РІРѕРїСЂРѕСЃРѕРІ
 			QuestionsLoad();
 			RandIndexLoad();
 			ChooseForm();
@@ -343,7 +343,7 @@ namespace Winform9 {
 		std::string YesNoRead() {
 			std::string temp = "";
 			if (answerA->Checked == true && answerB->Checked == true) {
-				errorProvider1->SetError(actionBtn, "Нужно выбрать только один ответ!");
+				errorProvider1->SetError(actionBtn, "РќСѓР¶РЅРѕ РІС‹Р±СЂР°С‚СЊ С‚РѕР»СЊРєРѕ РѕРґРёРЅ РѕС‚РІРµС‚!");
 			}
 			else if (answerA->Checked == true) {
 				temp = "A";
@@ -352,7 +352,7 @@ namespace Winform9 {
 				temp = "B";
 			}
 			else {
-				errorProvider1->SetError(actionBtn, "Нужно выбрать ответ!");
+				errorProvider1->SetError(actionBtn, "РќСѓР¶РЅРѕ РІС‹Р±СЂР°С‚СЊ РѕС‚РІРµС‚!");
 			}
 			return temp;
 		}
@@ -360,7 +360,7 @@ namespace Winform9 {
 		std::string OneAnswerRead() {
 			std::string temp = "";
 			if (answerA->Checked == false && answerB->Checked == false && answerC->Checked == false && answerD->Checked == false) {
-				errorProvider1->SetError(actionBtn, "Нужно выбрать ответ!");
+				errorProvider1->SetError(actionBtn, "РќСѓР¶РЅРѕ РІС‹Р±СЂР°С‚СЊ РѕС‚РІРµС‚!");
 			}
 			else if (answerA->Checked == true && answerB->Checked == false && answerC->Checked == false && answerD->Checked == false) {
 				temp = "A";
@@ -375,7 +375,7 @@ namespace Winform9 {
 				temp = "D";
 			}
 			else {
-				errorProvider1->SetError(actionBtn, "Нужно выбрать только один ответ!");
+				errorProvider1->SetError(actionBtn, "РќСѓР¶РЅРѕ РІС‹Р±СЂР°С‚СЊ С‚РѕР»СЊРєРѕ РѕРґРёРЅ РѕС‚РІРµС‚!");
 			}
 			return temp;
 
@@ -384,7 +384,7 @@ namespace Winform9 {
 		std::string SomeAnswersRead() {
 			std::string temp = "";
 			if (answerA->Checked == false && answerB->Checked == false && answerC->Checked == false && answerD->Checked == false) {
-				errorProvider1->SetError(actionBtn, "Нужно выбрать ответ!");
+				errorProvider1->SetError(actionBtn, "РќСѓР¶РЅРѕ РІС‹Р±СЂР°С‚СЊ РѕС‚РІРµС‚!");
 			}
 			if (answerA->Checked == true) {
 				temp += "A";
@@ -405,7 +405,7 @@ namespace Winform9 {
 		std::string ShortAnswerRead() {
 			std::string temp = msclr::interop::marshal_as<std::string>(shortAnswerBox->Text);
 			if (temp == "") {
-				errorProvider1->SetError(actionBtn, "Нужно ввести ответ!");
+				errorProvider1->SetError(actionBtn, "РќСѓР¶РЅРѕ РІРІРµСЃС‚Рё РѕС‚РІРµС‚!");
 			}
 			return temp;
 		}
@@ -442,18 +442,18 @@ namespace Winform9 {
 			if (iter != Questions->size()) {
 				answer = ReadAnswer();
 			}
-			// если ответ правильного формата
+			// РµСЃР»Рё РѕС‚РІРµС‚ РїСЂР°РІРёР»СЊРЅРѕРіРѕ С„РѕСЂРјР°С‚Р°
 			if (answer != "") {
 				int i = RandIndex->at(iter);
 				bool flag = false;
-				// проверка ответа
+				// РїСЂРѕРІРµСЂРєР° РѕС‚РІРµС‚Р°
 				if (Questions->at(i).getRightAnswer() == answer) {
-					// выставление баллов за ответ
+					// РІС‹СЃС‚Р°РІР»РµРЅРёРµ Р±Р°Р»Р»РѕРІ Р·Р° РѕС‚РІРµС‚
 					Questions->at(i).setResult(1);
 					flag = true;
 				}
 				else {
-					// выставление баллов за ответ
+					// РІС‹СЃС‚Р°РІР»РµРЅРёРµ Р±Р°Р»Р»РѕРІ Р·Р° РѕС‚РІРµС‚
 					Questions->at(i).setResult(0);
 				}
 				MessageForm^ msgForm = gcnew MessageForm();
@@ -467,7 +467,7 @@ namespace Winform9 {
 					questBox->Text = gcnew String(Questions->at(i).getText().c_str());
 				}
 				else {
-					questBox->Text = gcnew String("Вы набрали " + CalcResult() + " баллов");
+					questBox->Text = gcnew String("Р’С‹ РЅР°Р±СЂР°Р»Рё " + CalcResult() + " Р±Р°Р»Р»РѕРІ");
 				}
 			}
 		}

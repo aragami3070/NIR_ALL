@@ -10,7 +10,7 @@ namespace Winform9 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MessageForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MessageForm
 	/// </summary>
 	public ref class MessageForm : public System::Windows::Forms::Form
 	{
@@ -19,7 +19,7 @@ namespace Winform9 {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 		void setFlag(bool flagInp) {
@@ -28,7 +28,7 @@ namespace Winform9 {
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MessageForm()
 		{
@@ -48,14 +48,14 @@ namespace Winform9 {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 		System::ComponentModel::Container ^components;
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -70,7 +70,7 @@ namespace Winform9 {
 			this->lblRight->Name = L"lblRight";
 			this->lblRight->Size = System::Drawing::Size(104, 13);
 			this->lblRight->TabIndex = 0;
-			this->lblRight->Text = L"Вы ответили верно";
+			this->lblRight->Text = L"Р’С‹ РѕС‚РІРµС‚РёР»Рё РІРµСЂРЅРѕ";
 			// 
 			// lblWrong
 			// 
@@ -79,7 +79,7 @@ namespace Winform9 {
 			this->lblWrong->Name = L"lblWrong";
 			this->lblWrong->Size = System::Drawing::Size(119, 13);
 			this->lblWrong->TabIndex = 1;
-			this->lblWrong->Text = L"Вы ответили не верно";
+			this->lblWrong->Text = L"Р’С‹ РѕС‚РІРµС‚РёР»Рё РЅРµ РІРµСЂРЅРѕ";
 			// 
 			// MessageForm
 			// 
