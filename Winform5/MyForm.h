@@ -10,7 +10,7 @@ namespace Winform5 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -19,13 +19,13 @@ namespace Winform5 {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm()
 		{
@@ -63,14 +63,14 @@ namespace Winform5 {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -194,7 +194,7 @@ namespace Winform5 {
 			this->btnAddRow->Name = L"btnAddRow";
 			this->btnAddRow->Size = System::Drawing::Size(138, 32);
 			this->btnAddRow->TabIndex = 2;
-			this->btnAddRow->Text = L"Добавить строку";
+			this->btnAddRow->Text = L"Р”РѕР±Р°РІРёС‚СЊ СЃС‚СЂРѕРєСѓ";
 			this->btnAddRow->UseVisualStyleBackColor = true;
 			this->btnAddRow->Click += gcnew System::EventHandler(this, &MyForm::btnAddRow_Click);
 			// 
@@ -204,7 +204,7 @@ namespace Winform5 {
 			this->btnRemoveRow->Name = L"btnRemoveRow";
 			this->btnRemoveRow->Size = System::Drawing::Size(138, 32);
 			this->btnRemoveRow->TabIndex = 3;
-			this->btnRemoveRow->Text = L"Удалить строку";
+			this->btnRemoveRow->Text = L"РЈРґР°Р»РёС‚СЊ СЃС‚СЂРѕРєСѓ";
 			this->btnRemoveRow->UseVisualStyleBackColor = true;
 			this->btnRemoveRow->Click += gcnew System::EventHandler(this, &MyForm::btnRemoveRow_Click);
 			// 
@@ -214,7 +214,7 @@ namespace Winform5 {
 			this->btnAddColumn->Name = L"btnAddColumn";
 			this->btnAddColumn->Size = System::Drawing::Size(138, 32);
 			this->btnAddColumn->TabIndex = 4;
-			this->btnAddColumn->Text = L"Добавить столбец";
+			this->btnAddColumn->Text = L"Р”РѕР±Р°РІРёС‚СЊ СЃС‚РѕР»Р±РµС†";
 			this->btnAddColumn->UseVisualStyleBackColor = true;
 			this->btnAddColumn->Click += gcnew System::EventHandler(this, &MyForm::btnAddColumn_Click);
 			// 
@@ -224,7 +224,7 @@ namespace Winform5 {
 			this->btnRemoveColumn->Name = L"btnRemoveColumn";
 			this->btnRemoveColumn->Size = System::Drawing::Size(138, 32);
 			this->btnRemoveColumn->TabIndex = 5;
-			this->btnRemoveColumn->Text = L"Удалить столбец";
+			this->btnRemoveColumn->Text = L"РЈРґР°Р»РёС‚СЊ СЃС‚РѕР»Р±РµС†";
 			this->btnRemoveColumn->UseVisualStyleBackColor = true;
 			this->btnRemoveColumn->Click += gcnew System::EventHandler(this, &MyForm::btnRemoveColumn_Click);
 			// 
@@ -234,7 +234,7 @@ namespace Winform5 {
 			this->btnStart->Name = L"btnStart";
 			this->btnStart->Size = System::Drawing::Size(138, 32);
 			this->btnStart->TabIndex = 6;
-			this->btnStart->Text = L"Заменить";
+			this->btnStart->Text = L"Р—Р°РјРµРЅРёС‚СЊ";
 			this->btnStart->UseVisualStyleBackColor = true;
 			this->btnStart->Click += gcnew System::EventHandler(this, &MyForm::btnStart_Click);
 			// 
@@ -257,8 +257,8 @@ namespace Winform5 {
 			this->taskDescription->Name = L"taskDescription";
 			this->taskDescription->Size = System::Drawing::Size(454, 26);
 			this->taskDescription->TabIndex = 7;
-			this->taskDescription->Text = L" Поменять местами нулевую строку и строку, сумма элементов которой максимальна \r\n"
-				L"                                 (сумму элементов нулевой строки не учитывать).";
+			this->taskDescription->Text = L" РџРѕРјРµРЅСЏС‚СЊ РјРµСЃС‚Р°РјРё РЅСѓР»РµРІСѓСЋ СЃС‚СЂРѕРєСѓ Рё СЃС‚СЂРѕРєСѓ, СЃСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РєРѕС‚РѕСЂРѕР№ РјР°РєСЃРёРјР°Р»СЊРЅР° \r\n"
+				L"                                 (СЃСѓРјРјСѓ СЌР»РµРјРµРЅС‚РѕРІ РЅСѓР»РµРІРѕР№ СЃС‚СЂРѕРєРё РЅРµ СѓС‡РёС‚С‹РІР°С‚СЊ).";
 			// 
 			// MyForm
 			// 
@@ -274,7 +274,7 @@ namespace Winform5 {
 			this->Controls->Add(this->dataGridOutput);
 			this->Controls->Add(this->dataGridInput);
 			this->Name = L"MyForm";
-			this->Text = L"Обработка табличных значений. Часть2.";
+			this->Text = L"РћР±СЂР°Р±РѕС‚РєР° С‚Р°Р±Р»РёС‡РЅС‹С… Р·РЅР°С‡РµРЅРёР№. Р§Р°СЃС‚СЊ2.";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridInput))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dataGridOutput))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->erZeroRow))->EndInit();
@@ -288,27 +288,27 @@ namespace Winform5 {
 	int countRow = 0;
 	int countColumn = 1;
 
-	// Очистка полей
+	// РћС‡РёСЃС‚РєР° РїРѕР»РµР№
 	private: void ClearAll() { 
 		erZeroRow->SetError(btnRemoveRow, System::String::Empty);
 		erZeroColumn->SetError(btnRemoveColumn, System::String::Empty);
 		erChanges->SetError(btnStart, System::String::Empty);
 	}
 
-	// Добавление строки в таблицу
+	// Р”РѕР±Р°РІР»РµРЅРёРµ СЃС‚СЂРѕРєРё РІ С‚Р°Р±Р»РёС†Сѓ
 	private: System::Void btnAddRow_Click(System::Object^ sender, System::EventArgs^ e) {
 		ClearAll();
 		dataGridInput->Rows->Add(1);
 		dataGridOutput->Rows->Add(1);
-		// Увеличиваем счетчик, если добавили строку
+		// РЈРІРµР»РёС‡РёРІР°РµРј СЃС‡РµС‚С‡РёРє, РµСЃР»Рё РґРѕР±Р°РІРёР»Рё СЃС‚СЂРѕРєСѓ
 		countRow++;
 	}
 
-	// Удаление строки
+	// РЈРґР°Р»РµРЅРёРµ СЃС‚СЂРѕРєРё
 	private: System::Void btnRemoveRow_Click(System::Object^ sender, System::EventArgs^ e) {
 		ClearAll();
 		if (dataGridInput->CurrentRow == nullptr) {
-			this->erZeroRow->SetError(btnRemoveRow, "Нельзя удалить не существующую строку");
+			this->erZeroRow->SetError(btnRemoveRow, "РќРµР»СЊР·СЏ СѓРґР°Р»РёС‚СЊ РЅРµ СЃСѓС‰РµСЃС‚РІСѓСЋС‰СѓСЋ СЃС‚СЂРѕРєСѓ");
 			return;
 		}
 		if (!dataGridInput->CurrentRow->IsNewRow) {
@@ -319,30 +319,30 @@ namespace Winform5 {
 		}
 	}
 
-	// Уменьшаем счетчик, если удалили строку
+	// РЈРјРµРЅСЊС€Р°РµРј СЃС‡РµС‚С‡РёРє, РµСЃР»Рё СѓРґР°Р»РёР»Рё СЃС‚СЂРѕРєСѓ
 	private: System::Void dataGridInput_RowsRemoved(System::Object^ sender, System::Windows::Forms::DataGridViewRowsRemovedEventArgs^ e) {
 		countRow--;
 	}
 
-	// Добавление столбца
+	// Р”РѕР±Р°РІР»РµРЅРёРµ СЃС‚РѕР»Р±С†Р°
 	private: System::Void btnAddColumn_Click(System::Object^ sender, System::EventArgs^ e) {
 		ClearAll();
-		// Увеличиваем счетчик, если добавили столбец
+		// РЈРІРµР»РёС‡РёРІР°РµРј СЃС‡РµС‚С‡РёРє, РµСЃР»Рё РґРѕР±Р°РІРёР»Рё СЃС‚РѕР»Р±РµС†
 		++countColumn;
 		dataGridInput->Columns->Add("in" + System::Convert::ToString(countColumn), "in" + System::Convert::ToString(countColumn));
 		dataGridOutput->Columns->Add("out" + System::Convert::ToString(countColumn), "out" + System::Convert::ToString(countColumn));
 	}
 
-	// Удаление столбца
+	// РЈРґР°Р»РµРЅРёРµ СЃС‚РѕР»Р±С†Р°
 	private: System::Void btnRemoveColumn_Click(System::Object^ sender, System::EventArgs^ e) {
 		ClearAll();
 		if (countColumn == 1) {
-			erZeroColumn->SetError(btnRemoveColumn, "Нельзя удалить этот столбец");
+			erZeroColumn->SetError(btnRemoveColumn, "РќРµР»СЊР·СЏ СѓРґР°Р»РёС‚СЊ СЌС‚РѕС‚ СЃС‚РѕР»Р±РµС†");
 			return;
 		}
 		dataGridInput->Columns->Remove("in" + System::Convert::ToString(countColumn));
 		dataGridOutput->Columns->Remove("out" + System::Convert::ToString(countColumn));
-		// Уменьшаем счетчик, если удалили столбец
+		// РЈРјРµРЅСЊС€Р°РµРј СЃС‡РµС‚С‡РёРє, РµСЃР»Рё СѓРґР°Р»РёР»Рё СЃС‚РѕР»Р±РµС†
 		--countColumn;
 	}
 	
@@ -350,32 +350,32 @@ namespace Winform5 {
 	private: System::Void btnStart_Click(System::Object^ sender, System::EventArgs^ e) {
 		ClearAll();
 		if (countRow < 2) {
-			erChanges->SetError(btnStart, "Для выполнения изменений нужно 2 и более строк");
+			erChanges->SetError(btnStart, "Р”Р»СЏ РІС‹РїРѕР»РЅРµРЅРёСЏ РёР·РјРµРЅРµРЅРёР№ РЅСѓР¶РЅРѕ 2 Рё Р±РѕР»РµРµ СЃС‚СЂРѕРє");
 			return;
 		}
 
-		// Условно берем строку по индексу 1 как опорный максимум
+		// РЈСЃР»РѕРІРЅРѕ Р±РµСЂРµРј СЃС‚СЂРѕРєСѓ РїРѕ РёРЅРґРµРєСЃСѓ 1 РєР°Рє РѕРїРѕСЂРЅС‹Р№ РјР°РєСЃРёРјСѓРј
 		int indexMaxRow = 1;
 		int sumMax = 0;
 		for (int i = 0; i < countColumn; ++i) {
 			int cellValue = 0;
 			bool cell = Int32::TryParse(System::Convert::ToString(dataGridInput->Rows[0]->Cells[i]->Value), cellValue);
 			if (!cell) {
-				erChanges->SetError(btnStart, "Не число");
+				erChanges->SetError(btnStart, "РќРµ С‡РёСЃР»Рѕ");
 				return;
 			}
 			sumMax += cellValue;
 			dataGridOutput->Rows[0]->Cells[i]->Value = System::Convert::ToString(cellValue);
 		}
 
-		// Находим максимальную строку
+		// РќР°С…РѕРґРёРј РјР°РєСЃРёРјР°Р»СЊРЅСѓСЋ СЃС‚СЂРѕРєСѓ
 		for (int i = 1; i < countRow; ++i) {
 			int sum = 0;
 			for (int j = 0; j < countColumn; ++j) {
 				int cellValue = 0;
 				bool cell = Int32::TryParse(System::Convert::ToString(dataGridInput->Rows[i]->Cells[j]->Value), cellValue);
 				if (!cell) {
-					erChanges->SetError(btnStart, "Не число");
+					erChanges->SetError(btnStart, "РќРµ С‡РёСЃР»Рѕ");
 					return;
 				}
 				sum += cellValue;
@@ -387,14 +387,14 @@ namespace Winform5 {
 			}
 		}
 
-		// Меняем 0 строку с максимальной
+		// РњРµРЅСЏРµРј 0 СЃС‚СЂРѕРєСѓ СЃ РјР°РєСЃРёРјР°Р»СЊРЅРѕР№
 		for (int i = 0; i < countColumn; ++i) {
 			int cellValue = 0;
 			int cellMaxValue = 0;
 			bool cell = Int32::TryParse(System::Convert::ToString(dataGridInput->Rows[0]->Cells[i]->Value), cellValue);
 			bool cellMax = Int32::TryParse(System::Convert::ToString(dataGridInput->Rows[indexMaxRow]->Cells[i]->Value), cellMaxValue);
 			if (!cell || !cellMax) {
-				erChanges->SetError(btnStart, "Не число");
+				erChanges->SetError(btnStart, "РќРµ С‡РёСЃР»Рѕ");
 				return;
 			}
 			dataGridOutput->Rows[indexMaxRow]->Cells[i]->Value = System::Convert::ToString(cellValue);
