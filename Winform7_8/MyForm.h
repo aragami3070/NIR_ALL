@@ -10,7 +10,7 @@ namespace Winform7_8 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -19,13 +19,13 @@ namespace Winform7_8 {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm()
 		{
@@ -83,14 +83,14 @@ namespace Winform7_8 {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -126,7 +126,7 @@ namespace Winform7_8 {
 			this->lbl1->Name = L"lbl1";
 			this->lbl1->Size = System::Drawing::Size(79, 13);
 			this->lbl1->TabIndex = 0;
-			this->lbl1->Text = L"Ввод очереди:";
+			this->lbl1->Text = L"Р’РІРѕРґ РѕС‡РµСЂРµРґРё:";
 			// 
 			// tBInputQue
 			// 
@@ -150,7 +150,7 @@ namespace Winform7_8 {
 			this->lbl2->Name = L"lbl2";
 			this->lbl2->Size = System::Drawing::Size(53, 13);
 			this->lbl2->TabIndex = 2;
-			this->lbl2->Text = L"Очередь:";
+			this->lbl2->Text = L"РћС‡РµСЂРµРґСЊ:";
 			// 
 			// tBInputPush
 			// 
@@ -193,7 +193,7 @@ namespace Winform7_8 {
 			this->btnInputQue->Name = L"btnInputQue";
 			this->btnInputQue->Size = System::Drawing::Size(178, 23);
 			this->btnInputQue->TabIndex = 9;
-			this->btnInputQue->Text = L"Добавить элементы в очередь";
+			this->btnInputQue->Text = L"Р”РѕР±Р°РІРёС‚СЊ СЌР»РµРјРµРЅС‚С‹ РІ РѕС‡РµСЂРµРґСЊ";
 			this->btnInputQue->UseVisualStyleBackColor = true;
 			this->btnInputQue->Click += gcnew System::EventHandler(this, &MyForm::btnInputQue_Click);
 			// 
@@ -203,7 +203,7 @@ namespace Winform7_8 {
 			this->btnClearQue->Name = L"btnClearQue";
 			this->btnClearQue->Size = System::Drawing::Size(178, 23);
 			this->btnClearQue->TabIndex = 10;
-			this->btnClearQue->Text = L"Очистить очередь";
+			this->btnClearQue->Text = L"РћС‡РёСЃС‚РёС‚СЊ РѕС‡РµСЂРµРґСЊ";
 			this->btnClearQue->UseVisualStyleBackColor = true;
 			this->btnClearQue->Click += gcnew System::EventHandler(this, &MyForm::btnClearQue_Click);
 			// 
@@ -213,7 +213,7 @@ namespace Winform7_8 {
 			this->btnSum->Name = L"btnSum";
 			this->btnSum->Size = System::Drawing::Size(156, 23);
 			this->btnSum->TabIndex = 12;
-			this->btnSum->Text = L"Сумма четных в интервале";
+			this->btnSum->Text = L"РЎСѓРјРјР° С‡РµС‚РЅС‹С… РІ РёРЅС‚РµСЂРІР°Р»Рµ";
 			this->btnSum->UseVisualStyleBackColor = true;
 			this->btnSum->Click += gcnew System::EventHandler(this, &MyForm::btnSum_Click);
 			// 
@@ -238,7 +238,7 @@ namespace Winform7_8 {
 			this->lbl3->Name = L"lbl3";
 			this->lbl3->Size = System::Drawing::Size(184, 13);
 			this->lbl3->TabIndex = 14;
-			this->lbl3->Text = L"Добавить / удалить один элемент:\r\n";
+			this->lbl3->Text = L"Р”РѕР±Р°РІРёС‚СЊ / СѓРґР°Р»РёС‚СЊ РѕРґРёРЅ СЌР»РµРјРµРЅС‚:\r\n";
 			// 
 			// lbl4
 			// 
@@ -247,7 +247,7 @@ namespace Winform7_8 {
 			this->lbl4->Name = L"lbl4";
 			this->lbl4->Size = System::Drawing::Size(83, 13);
 			this->lbl4->TabIndex = 15;
-			this->lbl4->Text = L"Интервал [a,b]:";
+			this->lbl4->Text = L"РРЅС‚РµСЂРІР°Р» [a,b]:";
 			// 
 			// tBOutputNAM
 			// 
@@ -263,7 +263,7 @@ namespace Winform7_8 {
 			this->btnNewAfterMax->Name = L"btnNewAfterMax";
 			this->btnNewAfterMax->Size = System::Drawing::Size(373, 23);
 			this->btnNewAfterMax->TabIndex = 18;
-			this->btnNewAfterMax->Text = L"Новая очередь (новый элемент после всех макс)";
+			this->btnNewAfterMax->Text = L"РќРѕРІР°СЏ РѕС‡РµСЂРµРґСЊ (РЅРѕРІС‹Р№ СЌР»РµРјРµРЅС‚ РїРѕСЃР»Рµ РІСЃРµС… РјР°РєСЃ)";
 			this->btnNewAfterMax->UseVisualStyleBackColor = true;
 			this->btnNewAfterMax->Click += gcnew System::EventHandler(this, &MyForm::btnNewAfterMax_Click);
 			// 
@@ -274,7 +274,7 @@ namespace Winform7_8 {
 			this->lbl5->Name = L"lbl5";
 			this->lbl5->Size = System::Drawing::Size(90, 13);
 			this->lbl5->TabIndex = 19;
-			this->lbl5->Text = L"Новый элемент:";
+			this->lbl5->Text = L"РќРѕРІС‹Р№ СЌР»РµРјРµРЅС‚:";
 			// 
 			// tBInputNAM
 			// 
@@ -329,111 +329,111 @@ namespace Winform7_8 {
 		}
 #pragma endregion
 		System::Collections::Generic::Queue<int> q;
-		// Очистка errorProvider-ов
+		// РћС‡РёСЃС‚РєР° errorProvider-РѕРІ
 		void ClearEP() {
 			eP1->Clear();
 		}
 
 		void QueueOutput() {
-			// Вспомогательная очередь
+			// Р’СЃРїРѕРјРѕРіР°С‚РµР»СЊРЅР°СЏ РѕС‡РµСЂРµРґСЊ
 			System::Collections::Generic::Queue<int> buffer;
 			String^ str = "";
-			// Пока очередь не пуста
+			// РџРѕРєР° РѕС‡РµСЂРµРґСЊ РЅРµ РїСѓСЃС‚Р°
 			while (q.Count) {
-				// Записываем во вспомогательную очередь первый элемент
+				// Р—Р°РїРёСЃС‹РІР°РµРј РІРѕ РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅСѓСЋ РѕС‡РµСЂРµРґСЊ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
 				buffer.Enqueue(q.Peek());
-				// Удаляем первый элемент очереди
+				// РЈРґР°Р»СЏРµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РѕС‡РµСЂРµРґРё
 				q.Dequeue();
 			}
-			// Пока очередь не пуста
+			// РџРѕРєР° РѕС‡РµСЂРµРґСЊ РЅРµ РїСѓСЃС‚Р°
 			while (buffer.Count) {
-				// Записываем в основную очередь первый элемент
+				// Р—Р°РїРёСЃС‹РІР°РµРј РІ РѕСЃРЅРѕРІРЅСѓСЋ РѕС‡РµСЂРµРґСЊ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
 				q.Enqueue(buffer.Peek());
-				// Записываем первый элемент очереди в строку
+				// Р—Р°РїРёСЃС‹РІР°РµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РѕС‡РµСЂРµРґРё РІ СЃС‚СЂРѕРєСѓ
 				str += System::Convert::ToString(buffer.Peek() + " ");
-				// Удаляем первый элемент очереди
+				// РЈРґР°Р»СЏРµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РѕС‡РµСЂРµРґРё
 				buffer.Dequeue();
 			}
-			// Выводим результат
+			// Р’С‹РІРѕРґРёРј СЂРµР·СѓР»СЊС‚Р°С‚
 			this->tBOutputQue->Text = str->Substring(0, str->Length - 1);
 		}
 
 		private: System::Void btnInputQue_Click(System::Object^ sender, System::EventArgs^ e) {
 			ClearEP();
-			// Вспомогательная очередь
+			// Р’СЃРїРѕРјРѕРіР°С‚РµР»СЊРЅР°СЏ РѕС‡РµСЂРµРґСЊ
 			System::Collections::Generic::Queue<int> buffer;
-			// Считываем строку
+			// РЎС‡РёС‚С‹РІР°РµРј СЃС‚СЂРѕРєСѓ
 			String^ str = Convert::ToString(this->tBInputQue->Text);
 			int number, index;
 			int pos = 0;
 			if (str->IndexOf(",") != -1 || str->IndexOf(".") != -1) {
-				this->eP1->SetError(btnInputQue, "Не правильный формат ввода очереди (элементы через пробел, без ,. и тд");
+				this->eP1->SetError(btnInputQue, "РќРµ РїСЂР°РІРёР»СЊРЅС‹Р№ С„РѕСЂРјР°С‚ РІРІРѕРґР° РѕС‡РµСЂРµРґРё (СЌР»РµРјРµРЅС‚С‹ С‡РµСЂРµР· РїСЂРѕР±РµР», Р±РµР· ,. Рё С‚Рґ");
 				return;
 			}
 			else {
 				str += " ";
-				// Позиция первого пробела
+				// РџРѕР·РёС†РёСЏ РїРµСЂРІРѕРіРѕ РїСЂРѕР±РµР»Р°
 				index = str->IndexOf(" ");
 				String^ str2 = "";
-				// Пока находим пробел
+				// РџРѕРєР° РЅР°С…РѕРґРёРј РїСЂРѕР±РµР»
 				while (index != -1) {
-					// Считываем число
+					// РЎС‡РёС‚С‹РІР°РµРј С‡РёСЃР»Рѕ
 					str2 = str->Substring(pos, index - pos);
 					pos = index + 1;
 					bool res = Int32::TryParse(str2, number);
-					// Проверка на число
+					// РџСЂРѕРІРµСЂРєР° РЅР° С‡РёСЃР»Рѕ
 					if (!res) {
-						this->eP1->SetError(btnInputQue, "Очередь должна состоять только из целых чисел");
+						this->eP1->SetError(btnInputQue, "РћС‡РµСЂРµРґСЊ РґРѕР»Р¶РЅР° СЃРѕСЃС‚РѕСЏС‚СЊ С‚РѕР»СЊРєРѕ РёР· С†РµР»С‹С… С‡РёСЃРµР»");
 						buffer.Clear();
 						return;
 					}
 					else {
-						// Проверка на лишние пробелы (без нее могут добавляться лишние элементы - 0)
+						// РџСЂРѕРІРµСЂРєР° РЅР° Р»РёС€РЅРёРµ РїСЂРѕР±РµР»С‹ (Р±РµР· РЅРµРµ РјРѕРіСѓС‚ РґРѕР±Р°РІР»СЏС‚СЊСЃСЏ Р»РёС€РЅРёРµ СЌР»РµРјРµРЅС‚С‹ - 0)
 						if (str->IndexOf(" ", pos) == pos) {
-							this->eP1->SetError(btnInputQue, "Очередь содержит лишние пробелы");
+							this->eP1->SetError(btnInputQue, "РћС‡РµСЂРµРґСЊ СЃРѕРґРµСЂР¶РёС‚ Р»РёС€РЅРёРµ РїСЂРѕР±РµР»С‹");
 							buffer.Clear();
 							return;
 						}
 						else {
-							// Записываем во вспомогательную очередь
+							// Р—Р°РїРёСЃС‹РІР°РµРј РІРѕ РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅСѓСЋ РѕС‡РµСЂРµРґСЊ
 							buffer.Enqueue(number);
-							// Ищем следующий индекс
+							// РС‰РµРј СЃР»РµРґСѓСЋС‰РёР№ РёРЅРґРµРєСЃ
 							index = str->IndexOf(" ", pos);
 						}
 					}
 				}
-				// Вспомогательная очередь
+				// Р’СЃРїРѕРјРѕРіР°С‚РµР»СЊРЅР°СЏ РѕС‡РµСЂРµРґСЊ
 				System::Collections::Generic::Queue<int> buffer2;
 				str2 = "";
-				// Пока очередь не пуста
+				// РџРѕРєР° РѕС‡РµСЂРµРґСЊ РЅРµ РїСѓСЃС‚Р°
 				while (q.Count) {
-					// Записываем во вспомогательную очередь первый элемент
+					// Р—Р°РїРёСЃС‹РІР°РµРј РІРѕ РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅСѓСЋ РѕС‡РµСЂРµРґСЊ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
 					buffer2.Enqueue(q.Peek());
-					// Удаляем первый элемент очереди
+					// РЈРґР°Р»СЏРµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РѕС‡РµСЂРµРґРё
 					q.Dequeue();
 				}
-				// Пока очередь не пуста
+				// РџРѕРєР° РѕС‡РµСЂРµРґСЊ РЅРµ РїСѓСЃС‚Р°
 				while (buffer.Count) {
-					// Записываем во вспомогательную очередь первый элемент
+					// Р—Р°РїРёСЃС‹РІР°РµРј РІРѕ РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅСѓСЋ РѕС‡РµСЂРµРґСЊ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
 					buffer2.Enqueue(buffer.Peek());
-					// Удаляем первый элемент очереди
+					// РЈРґР°Р»СЏРµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РѕС‡РµСЂРµРґРё
 					buffer.Dequeue();
 				}
-				// Пока очередь не пуста
+				// РџРѕРєР° РѕС‡РµСЂРµРґСЊ РЅРµ РїСѓСЃС‚Р°
 				while (buffer2.Count) {
-					// Записываем в основную очередь первый элемент
+					// Р—Р°РїРёСЃС‹РІР°РµРј РІ РѕСЃРЅРѕРІРЅСѓСЋ РѕС‡РµСЂРµРґСЊ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
 					q.Enqueue(buffer2.Peek());
-					// Записываем первый элемент очереди в строку
+					// Р—Р°РїРёСЃС‹РІР°РµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РѕС‡РµСЂРµРґРё РІ СЃС‚СЂРѕРєСѓ
 					str2 += System::Convert::ToString(buffer2.Peek() + " ");
-					// Удаляем первый элемент очереди
+					// РЈРґР°Р»СЏРµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РѕС‡РµСЂРµРґРё
 					buffer2.Dequeue();
 				}
-				// Выводим результат
+				// Р’С‹РІРѕРґРёРј СЂРµР·СѓР»СЊС‚Р°С‚
 			this->tBOutputQue->Text = str2->Substring(0, str2->Length - 1);
 			}
 		}
 
-		// Очистить поле вывода очереди и очередь
+		// РћС‡РёСЃС‚РёС‚СЊ РїРѕР»Рµ РІС‹РІРѕРґР° РѕС‡РµСЂРµРґРё Рё РѕС‡РµСЂРµРґСЊ
 		private: System::Void btnClearQue_Click(System::Object^ sender, System::EventArgs^ e) {
 			ClearEP();
 			q.Clear();
@@ -442,15 +442,15 @@ namespace Winform7_8 {
 
 		private: System::Void btnPush_Click(System::Object^ sender, System::EventArgs^ e) {
 			ClearEP();
-			// Вспомогательная очередь
+			// Р’СЃРїРѕРјРѕРіР°С‚РµР»СЊРЅР°СЏ РѕС‡РµСЂРµРґСЊ
 			System::Collections::Generic::Queue<int> buffer;
-			// Считываем число
+			// РЎС‡РёС‚С‹РІР°РµРј С‡РёСЃР»Рѕ
 			int number;
 			bool res = Int32::TryParse(tBInputPush->Text, number);
 			String^ str = "";
-			// Проверка на число
+			// РџСЂРѕРІРµСЂРєР° РЅР° С‡РёСЃР»Рѕ
 			if (!res) {
-				this->eP1->SetError(btnPush, "Не целое число");
+				this->eP1->SetError(btnPush, "РќРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ");
 				buffer.Clear();
 				return;
 			}
@@ -461,15 +461,15 @@ namespace Winform7_8 {
 		private: System::Void btnPop_Click(System::Object^ sender, System::EventArgs^ e) {
 			ClearEP();
 			this->tBOutputPop->Clear();
-			// Проверка на непустую очередь
+			// РџСЂРѕРІРµСЂРєР° РЅР° РЅРµРїСѓСЃС‚СѓСЋ РѕС‡РµСЂРµРґСЊ
 			if (q.Count) {
-				// Считываем певрое число
+				// РЎС‡РёС‚С‹РІР°РµРј РїРµРІСЂРѕРµ С‡РёСЃР»Рѕ
 				String^ str = Convert::ToString(q.Peek());
-				// Выводим число
+				// Р’С‹РІРѕРґРёРј С‡РёСЃР»Рѕ
 				this->tBOutputPop->Text = str;
-				// Удаляем первый элемент
+				// РЈРґР°Р»СЏРµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
 				q.Dequeue();
-				// Если в очереди есть элементы, то выводим
+				// Р•СЃР»Рё РІ РѕС‡РµСЂРµРґРё РµСЃС‚СЊ СЌР»РµРјРµРЅС‚С‹, С‚Рѕ РІС‹РІРѕРґРёРј
 				if (q.Count) {
 					QueueOutput();
 				}
@@ -478,117 +478,117 @@ namespace Winform7_8 {
 				}
 			}
 			else {
-				this->eP1->SetError(btnPop, "Пустая очередь");
+				this->eP1->SetError(btnPop, "РџСѓСЃС‚Р°СЏ РѕС‡РµСЂРµРґСЊ");
 				return;
 			}
 		}
 
 		private: System::Void btnSum_Click(System::Object^ sender, System::EventArgs^ e) {
 			ClearEP();
-			// Вспомогательная очередь
+			// Р’СЃРїРѕРјРѕРіР°С‚РµР»СЊРЅР°СЏ РѕС‡РµСЂРµРґСЊ
 			System::Collections::Generic::Queue<int> buffer;
 			int a, b;
 			bool resA = Int32::TryParse(tBInputA->Text, a);
 			bool resB = Int32::TryParse(tBInputB->Text, b);
 			int sum = 0, i = 0;
 			if (!resA) {
-				this->eP1->SetError(tBInputA, "Не целое число");
+				this->eP1->SetError(tBInputA, "РќРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ");
 				return;
 			}
 			if (!resB) {
-				this->eP1->SetError(tBInputB, "Не целое число");
+				this->eP1->SetError(tBInputB, "РќРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ");
 				return;
 			}
 			if (a < 0 || a > b || a > q.Count) {
-				this->eP1->SetError(tBInputA, "Не верный интервал");
+				this->eP1->SetError(tBInputA, "РќРµ РІРµСЂРЅС‹Р№ РёРЅС‚РµСЂРІР°Р»");
 				return;
 			}
 			if (b > q.Count) {
-				this->eP1->SetError(tBInputB, "Не верный интервал");
+				this->eP1->SetError(tBInputB, "РќРµ РІРµСЂРЅС‹Р№ РёРЅС‚РµСЂРІР°Р»");
 				return;
 			}
 
-			// Пока очередь не пуста
+			// РџРѕРєР° РѕС‡РµСЂРµРґСЊ РЅРµ РїСѓСЃС‚Р°
 			while (q.Count) {
-				// Записываем во вспомогательную очередь первый элемент
+				// Р—Р°РїРёСЃС‹РІР°РµРј РІРѕ РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅСѓСЋ РѕС‡РµСЂРµРґСЊ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
 				buffer.Enqueue(q.Peek());
-				// Суммируем четные элементы
+				// РЎСѓРјРјРёСЂСѓРµРј С‡РµС‚РЅС‹Рµ СЌР»РµРјРµРЅС‚С‹
 				if (q.Peek() % 2 == 0 && (i >= a && i <= b)) {
 					sum += q.Peek();
 				}
-				// Удаляем первый элемент очереди
+				// РЈРґР°Р»СЏРµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РѕС‡РµСЂРµРґРё
 				q.Dequeue();
 				i++;
 			}
-			// Пока очередь не пуста
+			// РџРѕРєР° РѕС‡РµСЂРµРґСЊ РЅРµ РїСѓСЃС‚Р°
 			while (buffer.Count) {
-				// Записываем в основную очередь первый элемент
+				// Р—Р°РїРёСЃС‹РІР°РµРј РІ РѕСЃРЅРѕРІРЅСѓСЋ РѕС‡РµСЂРµРґСЊ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
 				q.Enqueue(buffer.Peek());
-				// Удаляем первый элемент очереди
+				// РЈРґР°Р»СЏРµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РѕС‡РµСЂРµРґРё
 				buffer.Dequeue();
 			}
-			// Выводим результат
+			// Р’С‹РІРѕРґРёРј СЂРµР·СѓР»СЊС‚Р°С‚
 			this->tBOutputSum->Text = Convert::ToString(sum);
 		}
 
 		private: System::Void btnNewAfterMax_Click(System::Object^ sender, System::EventArgs^ e) {
 			ClearEP();
 			this->tBOutputNAM->Clear();
-			// Вспомогательная очередь
+			// Р’СЃРїРѕРјРѕРіР°С‚РµР»СЊРЅР°СЏ РѕС‡РµСЂРµРґСЊ
 			System::Collections::Generic::Queue<int> buffer;
 			System::Collections::Generic::Queue<int> buffer2;
 			if (!q.Count) {
-				this->eP1->SetError(btnNewAfterMax, "Пустая очередь");
+				this->eP1->SetError(btnNewAfterMax, "РџСѓСЃС‚Р°СЏ РѕС‡РµСЂРµРґСЊ");
 				return;
 			}
 			int number, max = q.Peek();
 			bool res = Int32::TryParse(tBInputNAM->Text, number);
 			if (!res) {
-				this->eP1->SetError(tBInputNAM, "Не целое число");
+				this->eP1->SetError(tBInputNAM, "РќРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ");
 				return;
 			}
-			// Пока очередь не пуста
+			// РџРѕРєР° РѕС‡РµСЂРµРґСЊ РЅРµ РїСѓСЃС‚Р°
 			while (q.Count) {
-				// Записываем во вспомогательную очередь первый элемент
+				// Р—Р°РїРёСЃС‹РІР°РµРј РІРѕ РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅСѓСЋ РѕС‡РµСЂРµРґСЊ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
 				buffer2.Enqueue(q.Peek());
-				// Находим максимум
+				// РќР°С…РѕРґРёРј РјР°РєСЃРёРјСѓРј
 				if (q.Peek() > max) {
 					max = q.Peek();
 				}
-				// Удаляем первый элемент очереди
+				// РЈРґР°Р»СЏРµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РѕС‡РµСЂРµРґРё
 				q.Dequeue();
 			}
-			// Пока очередь не пуста
+			// РџРѕРєР° РѕС‡РµСЂРµРґСЊ РЅРµ РїСѓСЃС‚Р°
 			while (buffer2.Count) {
-				// Записываем в основную очередь первый элемент
+				// Р—Р°РїРёСЃС‹РІР°РµРј РІ РѕСЃРЅРѕРІРЅСѓСЋ РѕС‡РµСЂРµРґСЊ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
 				q.Enqueue(buffer2.Peek());
-				// Удаляем первый элемент очереди
+				// РЈРґР°Р»СЏРµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РѕС‡РµСЂРµРґРё
 				buffer2.Dequeue();
 			}
-			// Пока очередь не пуста
+			// РџРѕРєР° РѕС‡РµСЂРµРґСЊ РЅРµ РїСѓСЃС‚Р°
 			while (q.Count) {
-				// Записываем во вспомогательную очередь первый элемент
+				// Р—Р°РїРёСЃС‹РІР°РµРј РІРѕ РІСЃРїРѕРјРѕРіР°С‚РµР»СЊРЅСѓСЋ РѕС‡РµСЂРµРґСЊ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
 				buffer.Enqueue(q.Peek());
-				// Записываем после максимальных элементов новый элемент
+				// Р—Р°РїРёСЃС‹РІР°РµРј РїРѕСЃР»Рµ РјР°РєСЃРёРјР°Р»СЊРЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ РЅРѕРІС‹Р№ СЌР»РµРјРµРЅС‚
 				if (q.Peek() == max) {
 					buffer.Enqueue(number);
 				}
 				buffer2.Enqueue(q.Peek());
-				// Удаляем первый элемент очереди
+				// РЈРґР°Р»СЏРµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РѕС‡РµСЂРµРґРё
 				q.Dequeue();
 			}
 			String^ result = "";
-			// Пока очередь не пуста
+			// РџРѕРєР° РѕС‡РµСЂРµРґСЊ РЅРµ РїСѓСЃС‚Р°
 			while (buffer2.Count) {
-				// Записываем в основную очередь первый элемент
+				// Р—Р°РїРёСЃС‹РІР°РµРј РІ РѕСЃРЅРѕРІРЅСѓСЋ РѕС‡РµСЂРµРґСЊ РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚
 				q.Enqueue(buffer2.Peek());
-				// Удаляем первый элемент очереди
+				// РЈРґР°Р»СЏРµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РѕС‡РµСЂРµРґРё
 				buffer2.Dequeue();
 			}
 			while (buffer.Count) {
-				// Записываем результат
+				// Р—Р°РїРёСЃС‹РІР°РµРј СЂРµР·СѓР»СЊС‚Р°С‚
 				result += System::Convert::ToString(buffer.Peek() + " ");
-				// Удаляем первый элемент очереди
+				// РЈРґР°Р»СЏРµРј РїРµСЂРІС‹Р№ СЌР»РµРјРµРЅС‚ РѕС‡РµСЂРµРґРё
 				buffer.Dequeue();
 			}
 			this->tBOutputNAM->Text = result;
