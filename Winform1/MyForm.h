@@ -12,7 +12,7 @@ namespace Winform1 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -21,13 +21,13 @@ namespace Winform1 {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm()
 		{
@@ -57,14 +57,14 @@ namespace Winform1 {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -87,7 +87,7 @@ namespace Winform1 {
 			this->lblInput->Name = L"lblInput";
 			this->lblInput->Size = System::Drawing::Size(276, 24);
 			this->lblInput->TabIndex = 0;
-			this->lblInput->Text = L"Введите целое число или N =";
+			this->lblInput->Text = L"Р’РІРµРґРёС‚Рµ С†РµР»РѕРµ С‡РёСЃР»Рѕ РёР»Рё N =";
 			// 
 			// lblOutput
 			// 
@@ -98,7 +98,7 @@ namespace Winform1 {
 			this->lblOutput->Name = L"lblOutput";
 			this->lblOutput->Size = System::Drawing::Size(180, 24);
 			this->lblOutput->TabIndex = 1;
-			this->lblOutput->Text = L"Результат или N! =";
+			this->lblOutput->Text = L"Р РµР·СѓР»СЊС‚Р°С‚ РёР»Рё N! =";
 			// 
 			// btnCalculate
 			// 
@@ -108,7 +108,7 @@ namespace Winform1 {
 			this->btnCalculate->Name = L"btnCalculate";
 			this->btnCalculate->Size = System::Drawing::Size(132, 38);
 			this->btnCalculate->TabIndex = 2;
-			this->btnCalculate->Text = L"Вычислить";
+			this->btnCalculate->Text = L"Р’С‹С‡РёСЃР»РёС‚СЊ";
 			this->btnCalculate->UseVisualStyleBackColor = true;
 			this->btnCalculate->Click += gcnew System::EventHandler(this, &MyForm::btnCalculate_Click);
 			// 
@@ -147,7 +147,7 @@ namespace Winform1 {
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::Fixed3D;
 			this->MinimizeBox = false;
 			this->Name = L"MyForm";
-			this->Text = L"Факториал";
+			this->Text = L"Р¤Р°РєС‚РѕСЂРёР°Р»";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider1))->EndInit();
 			this->ResumeLayout(false);
@@ -155,33 +155,33 @@ namespace Winform1 {
 
 		}
 #pragma endregion
-	private: void ClearAll() { // очистка полей
-		this->txtOutput->Text = "Ошибка ввода";
+	private: void ClearAll() { // РѕС‡РёСЃС‚РєР° РїРѕР»РµР№
+		this->txtOutput->Text = "РћС€РёР±РєР° РІРІРѕРґР°";
 		errorProvider1->SetError(txtInput, String::Empty);
 	}
 	private: System::Void btnCalculate_Click(System::Object^ sender, System::EventArgs^ e) {
 		ClearAll();
 		long long InputNumber;
-		// переводим сторку из TextBox в число
+		// РїРµСЂРµРІРѕРґРёРј СЃС‚РѕСЂРєСѓ РёР· TextBox РІ С‡РёСЃР»Рѕ
 		bool result = Int64::TryParse(this->txtInput->Text, InputNumber);
-		// ввели не число
+		// РІРІРµР»Рё РЅРµ С‡РёСЃР»Рѕ
 		if (!result) {
-			errorProvider1->SetError(txtInput, "Введено не целое число");
+			errorProvider1->SetError(txtInput, "Р’РІРµРґРµРЅРѕ РЅРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ");
 		}
 		else {
 			if (InputNumber >= 20) {
-				errorProvider1->SetError(txtInput, "Слишком большое число");
+				errorProvider1->SetError(txtInput, "РЎР»РёС€РєРѕРј Р±РѕР»СЊС€РѕРµ С‡РёСЃР»Рѕ");
 			}
 			else{
-				// результат
+				// СЂРµР·СѓР»СЊС‚Р°С‚
 				long long OutputNumber = fact(InputNumber);
-				// отрицательное число
+				// РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ
 				if (OutputNumber == -1) {
-					errorProvider1->SetError(txtInput, "Введено отрицательное число");
+					errorProvider1->SetError(txtInput, "Р’РІРµРґРµРЅРѕ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅРѕРµ С‡РёСЃР»Рѕ");
 				}
-				// все нормально
+				// РІСЃРµ РЅРѕСЂРјР°Р»СЊРЅРѕ
 				else {
-					// записываем в поле вывода
+					// Р·Р°РїРёСЃС‹РІР°РµРј РІ РїРѕР»Рµ РІС‹РІРѕРґР°
 					this->txtOutput->Text = System::Convert::ToString(OutputNumber);
 				}
 			}
