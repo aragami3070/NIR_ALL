@@ -10,7 +10,7 @@ namespace Winform6 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -19,13 +19,13 @@ namespace Winform6 {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm()
 		{
@@ -139,14 +139,14 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -225,7 +225,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->btnResult->Name = L"btnResult";
 			this->btnResult->Size = System::Drawing::Size(224, 55);
 			this->btnResult->TabIndex = 13;
-			this->btnResult->Text = L"Вычислить";
+			this->btnResult->Text = L"Р’С‹С‡РёСЃР»РёС‚СЊ";
 			this->btnResult->UseVisualStyleBackColor = true;
 			this->btnResult->Click += gcnew System::EventHandler(this, &MyForm::btnResult_Click);
 			// 
@@ -236,7 +236,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->rBtnRankA->Name = L"rBtnRankA";
 			this->rBtnRankA->Size = System::Drawing::Size(107, 17);
 			this->rBtnRankA->TabIndex = 8;
-			this->rBtnRankA->Text = L"Ранг матрицы A";
+			this->rBtnRankA->Text = L"Р Р°РЅРі РјР°С‚СЂРёС†С‹ A";
 			this->rBtnRankA->UseVisualStyleBackColor = true;
 			// 
 			// rBtnVector
@@ -246,7 +246,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->rBtnVector->Name = L"rBtnVector";
 			this->rBtnVector->Size = System::Drawing::Size(154, 17);
 			this->rBtnVector->TabIndex = 7;
-			this->rBtnVector->Text = L"Векторное произведение";
+			this->rBtnVector->Text = L"Р’РµРєС‚РѕСЂРЅРѕРµ РїСЂРѕРёР·РІРµРґРµРЅРёРµ";
 			this->rBtnVector->UseVisualStyleBackColor = true;
 			// 
 			// rBtnScalar
@@ -256,7 +256,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->rBtnScalar->Name = L"rBtnScalar";
 			this->rBtnScalar->Size = System::Drawing::Size(155, 17);
 			this->rBtnScalar->TabIndex = 6;
-			this->rBtnScalar->Text = L"Скалярное произведение";
+			this->rBtnScalar->Text = L"РЎРєР°Р»СЏСЂРЅРѕРµ РїСЂРѕРёР·РІРµРґРµРЅРёРµ";
 			this->rBtnScalar->UseVisualStyleBackColor = true;
 			// 
 			// rBtnDetermA
@@ -266,7 +266,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->rBtnDetermA->Name = L"rBtnDetermA";
 			this->rBtnDetermA->Size = System::Drawing::Size(156, 17);
 			this->rBtnDetermA->TabIndex = 5;
-			this->rBtnDetermA->Text = L"Определитель матрицы A";
+			this->rBtnDetermA->Text = L"РћРїСЂРµРґРµР»РёС‚РµР»СЊ РјР°С‚СЂРёС†С‹ A";
 			this->rBtnDetermA->UseVisualStyleBackColor = true;
 			// 
 			// rBtnMultNum
@@ -276,7 +276,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->rBtnMultNum->Name = L"rBtnMultNum";
 			this->rBtnMultNum->Size = System::Drawing::Size(125, 17);
 			this->rBtnMultNum->TabIndex = 4;
-			this->rBtnMultNum->Text = L"Умножить на число";
+			this->rBtnMultNum->Text = L"РЈРјРЅРѕР¶РёС‚СЊ РЅР° С‡РёСЃР»Рѕ";
 			this->rBtnMultNum->UseVisualStyleBackColor = true;
 			// 
 			// rBtnTransposition
@@ -286,7 +286,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->rBtnTransposition->Name = L"rBtnTransposition";
 			this->rBtnTransposition->Size = System::Drawing::Size(160, 17);
 			this->rBtnTransposition->TabIndex = 3;
-			this->rBtnTransposition->Text = L"Транспонировать матрицу";
+			this->rBtnTransposition->Text = L"РўСЂР°РЅСЃРїРѕРЅРёСЂРѕРІР°С‚СЊ РјР°С‚СЂРёС†Сѓ";
 			this->rBtnTransposition->UseVisualStyleBackColor = true;
 			// 
 			// rBtnSubstract
@@ -296,7 +296,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->rBtnSubstract->Name = L"rBtnSubstract";
 			this->rBtnSubstract->Size = System::Drawing::Size(116, 17);
 			this->rBtnSubstract->TabIndex = 2;
-			this->rBtnSubstract->Text = L"Вычесть матрицы";
+			this->rBtnSubstract->Text = L"Р’С‹С‡РµСЃС‚СЊ РјР°С‚СЂРёС†С‹";
 			this->rBtnSubstract->UseVisualStyleBackColor = true;
 			// 
 			// rBtnSum
@@ -306,7 +306,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->rBtnSum->Name = L"rBtnSum";
 			this->rBtnSum->Size = System::Drawing::Size(117, 17);
 			this->rBtnSum->TabIndex = 1;
-			this->rBtnSum->Text = L"Сложить матрицы";
+			this->rBtnSum->Text = L"РЎР»РѕР¶РёС‚СЊ РјР°С‚СЂРёС†С‹";
 			this->rBtnSum->UseVisualStyleBackColor = true;
 			// 
 			// rBtnMultMatr
@@ -318,7 +318,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->rBtnMultMatr->Size = System::Drawing::Size(144, 17);
 			this->rBtnMultMatr->TabIndex = 0;
 			this->rBtnMultMatr->TabStop = true;
-			this->rBtnMultMatr->Text = L"Перемножить матрицы";
+			this->rBtnMultMatr->Text = L"РџРµСЂРµРјРЅРѕР¶РёС‚СЊ РјР°С‚СЂРёС†С‹";
 			this->rBtnMultMatr->UseVisualStyleBackColor = true;
 			// 
 			// labelRes
@@ -328,7 +328,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->labelRes->Name = L"labelRes";
 			this->labelRes->Size = System::Drawing::Size(62, 13);
 			this->labelRes->TabIndex = 15;
-			this->labelRes->Text = L"Результат:";
+			this->labelRes->Text = L"Р РµР·СѓР»СЊС‚Р°С‚:";
 			// 
 			// labelA
 			// 
@@ -337,7 +337,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->labelA->Name = L"labelA";
 			this->labelA->Size = System::Drawing::Size(61, 13);
 			this->labelA->TabIndex = 17;
-			this->labelA->Text = L"Матрица A";
+			this->labelA->Text = L"РњР°С‚СЂРёС†Р° A";
 			// 
 			// labelB
 			// 
@@ -346,7 +346,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->labelB->Name = L"labelB";
 			this->labelB->Size = System::Drawing::Size(61, 13);
 			this->labelB->TabIndex = 18;
-			this->labelB->Text = L"Матрица B";
+			this->labelB->Text = L"РњР°С‚СЂРёС†Р° B";
 			// 
 			// tbRowAInput
 			// 
@@ -368,7 +368,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->btnSizeA->Name = L"btnSizeA";
 			this->btnSizeA->Size = System::Drawing::Size(108, 55);
 			this->btnSizeA->TabIndex = 21;
-			this->btnSizeA->Text = L"Задать размер матрицы A";
+			this->btnSizeA->Text = L"Р—Р°РґР°С‚СЊ СЂР°Р·РјРµСЂ РјР°С‚СЂРёС†С‹ A";
 			this->btnSizeA->UseVisualStyleBackColor = true;
 			this->btnSizeA->Click += gcnew System::EventHandler(this, &MyForm::btnSizeA_Click);
 			// 
@@ -378,7 +378,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->btnSizeB->Name = L"btnSizeB";
 			this->btnSizeB->Size = System::Drawing::Size(108, 55);
 			this->btnSizeB->TabIndex = 24;
-			this->btnSizeB->Text = L"Задать размер матрицы B";
+			this->btnSizeB->Text = L"Р—Р°РґР°С‚СЊ СЂР°Р·РјРµСЂ РјР°С‚СЂРёС†С‹ B";
 			this->btnSizeB->UseVisualStyleBackColor = true;
 			this->btnSizeB->Click += gcnew System::EventHandler(this, &MyForm::btnSizeB_Click);
 			// 
@@ -427,7 +427,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->grChoose->Size = System::Drawing::Size(273, 292);
 			this->grChoose->TabIndex = 25;
 			this->grChoose->TabStop = false;
-			this->grChoose->Text = L"Выберете действие";
+			this->grChoose->Text = L"Р’С‹Р±РµСЂРµС‚Рµ РґРµР№СЃС‚РІРёРµ";
 			// 
 			// rBtnUnitMatrix
 			// 
@@ -436,7 +436,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->rBtnUnitMatrix->Name = L"rBtnUnitMatrix";
 			this->rBtnUnitMatrix->Size = System::Drawing::Size(125, 17);
 			this->rBtnUnitMatrix->TabIndex = 11;
-			this->rBtnUnitMatrix->Text = L"Единичная матрица";
+			this->rBtnUnitMatrix->Text = L"Р•РґРёРЅРёС‡РЅР°СЏ РјР°С‚СЂРёС†Р°";
 			this->rBtnUnitMatrix->UseVisualStyleBackColor = true;
 			// 
 			// rBtnSubVec
@@ -446,7 +446,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->rBtnSubVec->Name = L"rBtnSubVec";
 			this->rBtnSubVec->Size = System::Drawing::Size(123, 17);
 			this->rBtnSubVec->TabIndex = 10;
-			this->rBtnSubVec->Text = L"Разность векторов";
+			this->rBtnSubVec->Text = L"Р Р°Р·РЅРѕСЃС‚СЊ РІРµРєС‚РѕСЂРѕРІ";
 			this->rBtnSubVec->UseVisualStyleBackColor = true;
 			// 
 			// rBtnSumVec
@@ -456,7 +456,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->rBtnSumVec->Name = L"rBtnSumVec";
 			this->rBtnSumVec->Size = System::Drawing::Size(109, 17);
 			this->rBtnSumVec->TabIndex = 9;
-			this->rBtnSumVec->Text = L"Сумма векторов";
+			this->rBtnSumVec->Text = L"РЎСѓРјРјР° РІРµРєС‚РѕСЂРѕРІ";
 			this->rBtnSumVec->UseVisualStyleBackColor = true;
 			// 
 			// MyForm
@@ -479,7 +479,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			this->Controls->Add(this->matrixB);
 			this->Controls->Add(this->matrixA);
 			this->Name = L"MyForm";
-			this->Text = L"Матричный кальулятор";
+			this->Text = L"РњР°С‚СЂРёС‡РЅС‹Р№ РєР°Р»СЊСѓР»СЏС‚РѕСЂ";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->matrixA))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->matrixB))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->matrixResult))->EndInit();
@@ -494,14 +494,14 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 		}
 #pragma endregion
 	private:
-		// Очистка errorProvider-ов
+		// РћС‡РёСЃС‚РєР° errorProvider-РѕРІ
 		void ClearAll() { 
 			erPrSizeA->Clear();
 			erPrSizeB->Clear();
 			erPrResult->Clear();
 		}
 
-		// Ввод размеров матрицы A
+		// Р’РІРѕРґ СЂР°Р·РјРµСЂРѕРІ РјР°С‚СЂРёС†С‹ A
 		System::Void btnSizeA_Click(System::Object^ sender, System::EventArgs^ e) {
 			ClearAll();
 			int row;
@@ -509,13 +509,13 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			bool resRow = Int32::TryParse(tbRowAInput->Text, row);
 			bool resColumn = Int32::TryParse(tbColumnAInput->Text, column);
 
-			//проверки
+			//РїСЂРѕРІРµСЂРєРё
 			if (!resRow && !resColumn) {
-				erPrSizeA->SetError(btnSizeA, "Введено не целое число");
+				erPrSizeA->SetError(btnSizeA, "Р’РІРµРґРµРЅРѕ РЅРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ");
 				return;
 			}
 			else if (row < 1 || column < 1) {
-				erPrSizeA->SetError(btnSizeA, "Нельзя задать размер < 1");
+				erPrSizeA->SetError(btnSizeA, "РќРµР»СЊР·СЏ Р·Р°РґР°С‚СЊ СЂР°Р·РјРµСЂ < 1");
 				return;
 			}
 
@@ -528,7 +528,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 				matrixA->Columns->Remove(matrixA->Columns[0]);
 			}
 
-			// создание матрицы с новыми размерами
+			// СЃРѕР·РґР°РЅРёРµ РјР°С‚СЂРёС†С‹ СЃ РЅРѕРІС‹РјРё СЂР°Р·РјРµСЂР°РјРё
 			for (int i = 0; i < column; ++i) {
 				matrixA->Columns->Add("", "");
 			}
@@ -548,12 +548,12 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					}
 				}
 				else {
-					erPrSizeA->SetError(btnSizeA, "Матрица должна быть квадратной");
+					erPrSizeA->SetError(btnSizeA, "РњР°С‚СЂРёС†Р° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РєРІР°РґСЂР°С‚РЅРѕР№");
 				}
 			}
 		}
 
-		// Ввод размеров матрицы B
+		// Р’РІРѕРґ СЂР°Р·РјРµСЂРѕРІ РјР°С‚СЂРёС†С‹ B
 		System::Void btnSizeB_Click(System::Object^ sender, System::EventArgs^ e) {
 			ClearAll();
 			int row;
@@ -562,13 +562,13 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			bool resRow = Int32::TryParse(tbRowBInput->Text, row);
 			bool resColumn = Int32::TryParse(tbColumnBInput->Text, column);
 
-			//проверки
+			//РїСЂРѕРІРµСЂРєРё
 			if (!resRow && !resColumn) {
-				erPrSizeB->SetError(btnSizeB, "Введено не целое число");
+				erPrSizeB->SetError(btnSizeB, "Р’РІРµРґРµРЅРѕ РЅРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ");
 				return;
 			}
 			else if (row < 1 || column < 1) {
-				erPrSizeB->SetError(btnSizeB, "Нельзя задать размер < 1");
+				erPrSizeB->SetError(btnSizeB, "РќРµР»СЊР·СЏ Р·Р°РґР°С‚СЊ СЂР°Р·РјРµСЂ < 1");
 				return;
 			}
 
@@ -581,7 +581,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 				matrixB->Columns->Remove(matrixB->Columns[0]);
 			}
 
-			// создание матрицы с новыми размерами
+			// СЃРѕР·РґР°РЅРёРµ РјР°С‚СЂРёС†С‹ СЃ РЅРѕРІС‹РјРё СЂР°Р·РјРµСЂР°РјРё
 			for (int i = 0; i < column; ++i) {
 				matrixB->Columns->Add("", "");
 			}
@@ -601,12 +601,12 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					}
 				}
 				else {
-					erPrSizeB->SetError(btnSizeB, "Матрица должна быть квадратной");
+					erPrSizeB->SetError(btnSizeB, "РњР°С‚СЂРёС†Р° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РєРІР°РґСЂР°С‚РЅРѕР№");
 				}
 			}
 		}
 
-		// Очисть матрицу результата
+		// РћС‡РёСЃС‚СЊ РјР°С‚СЂРёС†Сѓ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 		void ClearMatrixResult() {
 			int rowBefore = matrixResult->RowCount;
 			int columnBefore = matrixResult->ColumnCount;
@@ -618,7 +618,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			}
 		}
 		
-		// Умножение матриц A и B
+		// РЈРјРЅРѕР¶РµРЅРёРµ РјР°С‚СЂРёС† A Рё B
 		void MultMatrix(int row, int column) {
 			int mult;
 			int a, b;
@@ -627,14 +627,14 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 				for (int j = 0; j < row; j++) {
 				mult = 0;
 					for (int k = 0; k < matrixA->ColumnCount; k++) {
-						// проверки на не целые числа/строки в матрице
+						// РїСЂРѕРІРµСЂРєРё РЅР° РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°/СЃС‚СЂРѕРєРё РІ РјР°С‚СЂРёС†Рµ
 						check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[j]->Cells[k]->Value), a);
 						if (!check) {
-							throw gcnew FormatException("В матрице присутствуют не целые числа");
+							throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 						}
 						check = Int32::TryParse(System::Convert::ToString(matrixB->Rows[k]->Cells[i]->Value), b);
 						if (!check) {
-							throw gcnew FormatException("В матрице присутствуют не целые числа");
+							throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 						}
 
 						mult += a * b;
@@ -644,7 +644,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			}
 		}
 
-		// Сумма матриц A и B
+		// РЎСѓРјРјР° РјР°С‚СЂРёС† A Рё B
 		void SumMatrix(int row, int column) {
 			int a, b;
 			bool check;
@@ -652,18 +652,18 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 				for (int j = 0; j < column; j++) {
 					check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[i]->Cells[j]->Value), a);
 					if (!check) {
-						throw gcnew FormatException("В матрице присутствуют не целые числа");
+						throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 					}
 					check = Int32::TryParse(System::Convert::ToString(matrixB->Rows[i]->Cells[j]->Value), b);
 					if (!check) {
-						throw gcnew FormatException("В матрице присутствуют не целые числа");
+						throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 					}
 					matrixResult->Rows[i]->Cells[j]->Value = a + b;
 				}
 			}
 		}
 
-		// Разность матриц A и B
+		// Р Р°Р·РЅРѕСЃС‚СЊ РјР°С‚СЂРёС† A Рё B
 		void SubstractMatrix(int row, int column) {
 			int a, b;
 			bool check;
@@ -671,18 +671,18 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 				for (int j = 0; j < column; j++) {
 					check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[i]->Cells[j]->Value), a);
 					if (!check) {
-						throw gcnew FormatException("В матрице присутствуют не целые числа");
+						throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 					}
 					check = Int32::TryParse(System::Convert::ToString(matrixB->Rows[i]->Cells[j]->Value), b);
 					if (!check) {
-						throw gcnew FormatException("В матрице присутствуют не целые числа");
+						throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 					}
 					matrixResult->Rows[i]->Cells[j]->Value = a - b;
 				}
 			}
 		}
 
-		// умножение матрицы A на число num
+		// СѓРјРЅРѕР¶РµРЅРёРµ РјР°С‚СЂРёС†С‹ A РЅР° С‡РёСЃР»Рѕ num
 		void MultNum(int row, int column, int num) {
 			int a;
 			bool check;
@@ -690,26 +690,26 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 				for (int j = 0; j < column; j++) {
 					check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[i]->Cells[j]->Value), a);
 					if (!check) {
-						throw gcnew FormatException("В матрице присутствуют не целые числа");
+						throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 					}
 					matrixResult->Rows[i]->Cells[j]->Value = a * num;
 				}
 			}
 		}
 
-		// Нахождение определителя
+		// РќР°С…РѕР¶РґРµРЅРёРµ РѕРїСЂРµРґРµР»РёС‚РµР»СЏ
 		int Determinant(int** matrix, int size) {
 			int deter = 0;
 			int sign = 1;
 
-			// для матриц 1*1 и 2*2
+			// РґР»СЏ РјР°С‚СЂРёС† 1*1 Рё 2*2
 			if (size == 1) {
 				deter = matrix[0][0];
 			}
 			else if (size == 2) {
 				deter = (matrix[0][0] * matrix[1][1]) - (matrix[1][0] * matrix[0][1]);
 			}
-			// разложение по Лапласу
+			// СЂР°Р·Р»РѕР¶РµРЅРёРµ РїРѕ Р›Р°РїР»Р°СЃСѓ
 			else {
 				for (int i = 0; i < size; ++i) {
 					//
@@ -742,7 +742,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			return deter;
 		}
 
-		// Нахождение ранга
+		// РќР°С…РѕР¶РґРµРЅРёРµ СЂР°РЅРіР°
 		int Rank(int** matrix, int row, int column) {
 			double** tempMatrix = new double* [row];
 			for (int i = 0; i < row; ++i) {
@@ -795,18 +795,18 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			ClearMatrixResult();
 			try {
 				if (rBtnMultMatr->Checked) {
-					// проверка на подходящий размер
+					// РїСЂРѕРІРµСЂРєР° РЅР° РїРѕРґС…РѕРґСЏС‰РёР№ СЂР°Р·РјРµСЂ
 					if (matrixA->ColumnCount != matrixB->RowCount) {
-						throw gcnew ArgumentException("Кол-во столбцов матрицы A != кол-ву строк матрицы B");
+						throw gcnew ArgumentException("РљРѕР»-РІРѕ СЃС‚РѕР»Р±С†РѕРІ РјР°С‚СЂРёС†С‹ A != РєРѕР»-РІСѓ СЃС‚СЂРѕРє РјР°С‚СЂРёС†С‹ B");
 					}
-					// создание пустой матрицы результата
+					// СЃРѕР·РґР°РЅРёРµ РїСѓСЃС‚РѕР№ РјР°С‚СЂРёС†С‹ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 					int row = matrixA->RowCount;
 					int column = matrixB->ColumnCount;
 					for (int j = 0; j < column; j++) {
 						matrixResult->Columns->Add("", "");
 					}
 					matrixResult->Rows->Add(row);
-					// умножение матриц и запись результата в matrixResult
+					// СѓРјРЅРѕР¶РµРЅРёРµ РјР°С‚СЂРёС† Рё Р·Р°РїРёСЃСЊ СЂРµР·СѓР»СЊС‚Р°С‚Р° РІ matrixResult
 					MultMatrix(row, column);
 				}	
 				else if (rBtnSum->Checked) {
@@ -814,16 +814,16 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					int column1 = matrixA->ColumnCount;
 					int row2 = matrixB->RowCount;
 					int column2 = matrixB->ColumnCount;
-					// проверка на равный размер
+					// РїСЂРѕРІРµСЂРєР° РЅР° СЂР°РІРЅС‹Р№ СЂР°Р·РјРµСЂ
 					if (row1 != row2 || column1 != column2) {
-						throw gcnew ArgumentException("Размеры у матриц отличаются");
+						throw gcnew ArgumentException("Р Р°Р·РјРµСЂС‹ Сѓ РјР°С‚СЂРёС† РѕС‚Р»РёС‡Р°СЋС‚СЃСЏ");
 					}
-					// создание пустой матрицы результата
+					// СЃРѕР·РґР°РЅРёРµ РїСѓСЃС‚РѕР№ РјР°С‚СЂРёС†С‹ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 					for (int j = 0; j < column1; j++) {
 						matrixResult->Columns->Add("", "");
 					}
 					matrixResult->Rows->Add(row1);
-					// сумма матриц и запись результата в matrixResult
+					// СЃСѓРјРјР° РјР°С‚СЂРёС† Рё Р·Р°РїРёСЃСЊ СЂРµР·СѓР»СЊС‚Р°С‚Р° РІ matrixResult
 					SumMatrix(row1, column1);
 				}
 				else if (rBtnSubstract->Checked) {
@@ -831,16 +831,16 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					int column1 = matrixA->ColumnCount;
 					int row2 = matrixB->RowCount;
 					int column2 = matrixB->ColumnCount;
-					// проверка на равный размер
+					// РїСЂРѕРІРµСЂРєР° РЅР° СЂР°РІРЅС‹Р№ СЂР°Р·РјРµСЂ
 					if (row1 != row2 || column1 != column2) {
-						throw gcnew ArgumentException("Размеры у матриц отличаются");
+						throw gcnew ArgumentException("Р Р°Р·РјРµСЂС‹ Сѓ РјР°С‚СЂРёС† РѕС‚Р»РёС‡Р°СЋС‚СЃСЏ");
 					}
-					// создание пустой матрицы результата
+					// СЃРѕР·РґР°РЅРёРµ РїСѓСЃС‚РѕР№ РјР°С‚СЂРёС†С‹ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 					for (int j = 0; j < column1; j++) {
 						matrixResult->Columns->Add("", "");
 					}
 					matrixResult->Rows->Add(row1);
-					// разность матриц и запись результата в matrixResult
+					// СЂР°Р·РЅРѕСЃС‚СЊ РјР°С‚СЂРёС† Рё Р·Р°РїРёСЃСЊ СЂРµР·СѓР»СЊС‚Р°С‚Р° РІ matrixResult
 					SubstractMatrix(row1, column1);
 				}
 				else if (rBtnMultNum->Checked) {
@@ -848,11 +848,11 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					int column1 = matrixA->ColumnCount;
 					int row2 = matrixB->RowCount;
 					int column2 = matrixB->ColumnCount;
-					// проверка на равный размер
+					// РїСЂРѕРІРµСЂРєР° РЅР° СЂР°РІРЅС‹Р№ СЂР°Р·РјРµСЂ
 					if (row2 != 1 && column2 != 1) {
-						throw gcnew ArgumentException("В матрице B должна находится одна ячейка с числом");
+						throw gcnew ArgumentException("Р’ РјР°С‚СЂРёС†Рµ B РґРѕР»Р¶РЅР° РЅР°С…РѕРґРёС‚СЃСЏ РѕРґРЅР° СЏС‡РµР№РєР° СЃ С‡РёСЃР»РѕРј");
 					}
-					// создание пустой матрицы результата
+					// СЃРѕР·РґР°РЅРёРµ РїСѓСЃС‚РѕР№ РјР°С‚СЂРёС†С‹ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 					for (int j = 0; j < column1; j++) {
 						matrixResult->Columns->Add("", "");
 					}
@@ -860,26 +860,26 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					int num;
 					bool check = Int32::TryParse(System::Convert::ToString(matrixB->Rows[0]->Cells[0]->Value), num);
 					if (!check) {
-						throw gcnew FormatException("В матрице присутствуют не целые числа");
+						throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 					}
-					// умножение матрицы на число и запись результата в matrixResult
+					// СѓРјРЅРѕР¶РµРЅРёРµ РјР°С‚СЂРёС†С‹ РЅР° С‡РёСЃР»Рѕ Рё Р·Р°РїРёСЃСЊ СЂРµР·СѓР»СЊС‚Р°С‚Р° РІ matrixResult
 					MultNum(row1, column1, num);
 				}
 				else if (rBtnTransposition->Checked) {
 					int row = matrixA->RowCount;
 					int column = matrixA->ColumnCount;
-					// создание пустой матрицы результата
+					// СЃРѕР·РґР°РЅРёРµ РїСѓСЃС‚РѕР№ РјР°С‚СЂРёС†С‹ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 					for (int j = 0; j < row; j++) {
 						matrixResult->Columns->Add("", "");
 					}
 					matrixResult->Rows->Add(column);
-					// транспонирование матрицы A и запись результата в matrixResult
+					// С‚СЂР°РЅСЃРїРѕРЅРёСЂРѕРІР°РЅРёРµ РјР°С‚СЂРёС†С‹ A Рё Р·Р°РїРёСЃСЊ СЂРµР·СѓР»СЊС‚Р°С‚Р° РІ matrixResult
 					int a;
 					for (int i = 0; i < row; i++) {
 						for (int j = 0; j < column; j++) {
 							bool check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[i]->Cells[j]->Value), a);
 							if (!check) {
-								throw gcnew FormatException("В матрице присутствуют не целые числа");
+								throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 							}
 							matrixResult->Rows[j]->Cells[i]->Value = a;
 						}
@@ -888,14 +888,14 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 				else if (rBtnDetermA->Checked) {
 					int row = matrixA->RowCount;
 					int column = matrixA->ColumnCount;
-					// проверка на квадратный размер
+					// РїСЂРѕРІРµСЂРєР° РЅР° РєРІР°РґСЂР°С‚РЅС‹Р№ СЂР°Р·РјРµСЂ
 					if (row != column) {
-						throw gcnew ArgumentException("Матрица должна быть квадратной");
+						throw gcnew ArgumentException("РњР°С‚СЂРёС†Р° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РєРІР°РґСЂР°С‚РЅРѕР№");
 					}
-					// создание пустой матрицы результата
+					// СЃРѕР·РґР°РЅРёРµ РїСѓСЃС‚РѕР№ РјР°С‚СЂРёС†С‹ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 					matrixResult->Columns->Add("", "");
 					matrixResult->Rows->Add(1);
-					// считывание матрицы A
+					// СЃС‡РёС‚С‹РІР°РЅРёРµ РјР°С‚СЂРёС†С‹ A
 					int a;
 					int** matrix = new int* [row];
 					for (int i = 0; i < row; ++i) {
@@ -903,21 +903,21 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 						for (int j = 0; j < row; ++j) {
 							bool check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[i]->Cells[j]->Value), a);
 							if (!check) {
-								throw gcnew FormatException("В матрице присутствуют не целые числа");
+								throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 							}
 							matrix[i][j] = a;
 						}
 					}
-					// нахождение определителя A и запись результата в matrixResult
+					// РЅР°С…РѕР¶РґРµРЅРёРµ РѕРїСЂРµРґРµР»РёС‚РµР»СЏ A Рё Р·Р°РїРёСЃСЊ СЂРµР·СѓР»СЊС‚Р°С‚Р° РІ matrixResult
 					matrixResult->Rows[0]->Cells[0]->Value = Determinant(matrix, row);
 				}
 				else if (rBtnRankA->Checked) {
 					int row = matrixA->RowCount;
 					int column = matrixA->ColumnCount;
-					// создание пустой матрицы результата
+					// СЃРѕР·РґР°РЅРёРµ РїСѓСЃС‚РѕР№ РјР°С‚СЂРёС†С‹ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 					matrixResult->Columns->Add("", "");
 					matrixResult->Rows->Add(1);
-					// считывание матрицы A
+					// СЃС‡РёС‚С‹РІР°РЅРёРµ РјР°С‚СЂРёС†С‹ A
 					int a;
 					int** matrix = new int* [row];
 					for (int i = 0; i < row; ++i) {
@@ -925,12 +925,12 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 						for (int j = 0; j < row; ++j) {
 							bool check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[i]->Cells[j]->Value), a);
 							if (!check) {
-								throw gcnew FormatException("В матрице присутствуют не целые числа");
+								throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 							}
 							matrix[i][j] = a;
 						}
 					}
-					// нахождение ранга A и запись результата в matrixResult
+					// РЅР°С…РѕР¶РґРµРЅРёРµ СЂР°РЅРіР° A Рё Р·Р°РїРёСЃСЊ СЂРµР·СѓР»СЊС‚Р°С‚Р° РІ matrixResult
 					matrixResult->Rows[0]->Cells[0]->Value = Rank(matrix, row, column);
 				}
 				else if (rBtnScalar->Checked) {
@@ -938,14 +938,14 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					int column1 = matrixA->ColumnCount;
 					int row2 = matrixB->RowCount;
 					int column2 = matrixB->ColumnCount;
-					// проверка на корректность входных матриц (векторов)
+					// РїСЂРѕРІРµСЂРєР° РЅР° РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚СЊ РІС…РѕРґРЅС‹С… РјР°С‚СЂРёС† (РІРµРєС‚РѕСЂРѕРІ)
 					if (row1 != 1 && row2 != 1) {
-						throw gcnew ArgumentException("Матрицы должны представлять из себя вектора (a_1,a_2,...,a_n)");
+						throw gcnew ArgumentException("РњР°С‚СЂРёС†С‹ РґРѕР»Р¶РЅС‹ РїСЂРµРґСЃС‚Р°РІР»СЏС‚СЊ РёР· СЃРµР±СЏ РІРµРєС‚РѕСЂР° (a_1,a_2,...,a_n)");
 					}
 					if (column1 != column2) {
-						throw gcnew ArgumentException("Вектора должны быть одного размера");
+						throw gcnew ArgumentException("Р’РµРєС‚РѕСЂР° РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РѕРґРЅРѕРіРѕ СЂР°Р·РјРµСЂР°");
 					}
-					// создание пустой матрицы результата
+					// СЃРѕР·РґР°РЅРёРµ РїСѓСЃС‚РѕР№ РјР°С‚СЂРёС†С‹ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 					matrixResult->Columns->Add("", "");
 					matrixResult->Rows->Add(1);
 					int a, b, scalar = 0;
@@ -953,11 +953,11 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					for (int i = 0; i < column1; i++){
 						check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[0]->Cells[i]->Value), a);
 						if (!check) {
-							throw gcnew FormatException("В матрице присутствуют не целые числа");
+							throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 						}
 						check = Int32::TryParse(System::Convert::ToString(matrixB->Rows[0]->Cells[i]->Value), b);
 						if (!check) {
-							throw gcnew FormatException("В матрице присутствуют не целые числа");
+							throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 						}
 						scalar += a * b;
 					}
@@ -968,35 +968,35 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					int column1 = matrixA->ColumnCount;
 					int row2 = matrixB->RowCount;
 					int column2 = matrixB->ColumnCount;
-					// проверка на корректность входных матриц (векторов)
+					// РїСЂРѕРІРµСЂРєР° РЅР° РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚СЊ РІС…РѕРґРЅС‹С… РјР°С‚СЂРёС† (РІРµРєС‚РѕСЂРѕРІ)
 					if (row1 != 1 && row2 != 1) {
-						throw gcnew ArgumentException("Матрицы должны представлять из себя вектора (a_1,a_2,...,a_n)");
+						throw gcnew ArgumentException("РњР°С‚СЂРёС†С‹ РґРѕР»Р¶РЅС‹ РїСЂРµРґСЃС‚Р°РІР»СЏС‚СЊ РёР· СЃРµР±СЏ РІРµРєС‚РѕСЂР° (a_1,a_2,...,a_n)");
 					}
 					if (column1 != 3 || column2 != 3) {
-						throw gcnew ArgumentException("Работает для векторов с размером 3");
+						throw gcnew ArgumentException("Р Р°Р±РѕС‚Р°РµС‚ РґР»СЏ РІРµРєС‚РѕСЂРѕРІ СЃ СЂР°Р·РјРµСЂРѕРј 3");
 					}
-					// создание пустой матрицы результата
+					// СЃРѕР·РґР°РЅРёРµ РїСѓСЃС‚РѕР№ РјР°С‚СЂРёС†С‹ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 					for (int i = 0; i < 3; ++i) {
 						matrixResult->Columns->Add("", "");
 					}
 					matrixResult->Rows->Add(1);
-					// считывание вектора A
+					// СЃС‡РёС‚С‹РІР°РЅРёРµ РІРµРєС‚РѕСЂР° A
 					int a;
 					int* matrixAinp = new int [3];
 					for (int i = 0; i < 3; ++i) {
 						bool check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[0]->Cells[i]->Value), a);
 						if (!check){
-							throw gcnew FormatException("В присутствуют не целые числа");
+							throw gcnew FormatException("Р’ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 						}
 						matrixAinp[i] = a;
 					}
-					// считывание вектора B
+					// СЃС‡РёС‚С‹РІР°РЅРёРµ РІРµРєС‚РѕСЂР° B
 					int b;
 					int* matrixBinp = new int [3];
 					for (int i = 0; i < 3; ++i) {
 						bool check = Int32::TryParse(System::Convert::ToString(matrixB->Rows[0]->Cells[i]->Value), b);
 						if (!check){
-							throw gcnew FormatException("В присутствуют не целые числа");
+							throw gcnew FormatException("Р’ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 						}
 						matrixBinp[i] = b;
 					}
@@ -1013,29 +1013,29 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					int column1 = matrixA->ColumnCount;
 					int row2 = matrixB->RowCount;
 					int column2 = matrixB->ColumnCount;
-					// проверка на корректность входных матриц (векторов)
+					// РїСЂРѕРІРµСЂРєР° РЅР° РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚СЊ РІС…РѕРґРЅС‹С… РјР°С‚СЂРёС† (РІРµРєС‚РѕСЂРѕРІ)
 					if (row1 != 1 && row2 != 1) {
-						throw gcnew ArgumentException("Матрицы должны представлять из себя вектора (a_1,a_2,...,a_n)");
+						throw gcnew ArgumentException("РњР°С‚СЂРёС†С‹ РґРѕР»Р¶РЅС‹ РїСЂРµРґСЃС‚Р°РІР»СЏС‚СЊ РёР· СЃРµР±СЏ РІРµРєС‚РѕСЂР° (a_1,a_2,...,a_n)");
 					}
 					if (column1 != column2) {
-						throw gcnew ArgumentException("Вектора должны быть одного размера");
+						throw gcnew ArgumentException("Р’РµРєС‚РѕСЂР° РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РѕРґРЅРѕРіРѕ СЂР°Р·РјРµСЂР°");
 					}
-					// создание пустой матрицы результата
+					// СЃРѕР·РґР°РЅРёРµ РїСѓСЃС‚РѕР№ РјР°С‚СЂРёС†С‹ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 					for (int i = 0; i < column1; ++i) {
 						matrixResult->Columns->Add("", "");
 					}
 					matrixResult->Rows->Add(1);
-					// сумма векторов
+					// СЃСѓРјРјР° РІРµРєС‚РѕСЂРѕРІ
 					int a, b;
 					bool check;
 					for (int i = 0; i < column1; i++){
 						check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[0]->Cells[i]->Value), a);
 						if (!check) {
-							throw gcnew FormatException("В матрице присутствуют не целые числа");
+							throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 						}
 						check = Int32::TryParse(System::Convert::ToString(matrixB->Rows[0]->Cells[i]->Value), b);
 						if (!check) {
-							throw gcnew FormatException("В матрице присутствуют не целые числа");
+							throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 						}
 						matrixResult->Rows[0]->Cells[i]->Value = a + b;
 					}
@@ -1045,29 +1045,29 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					int column1 = matrixA->ColumnCount;
 					int row2 = matrixB->RowCount;
 					int column2 = matrixB->ColumnCount;
-					// проверка на корректность входных матриц (векторов)
+					// РїСЂРѕРІРµСЂРєР° РЅР° РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚СЊ РІС…РѕРґРЅС‹С… РјР°С‚СЂРёС† (РІРµРєС‚РѕСЂРѕРІ)
 					if (row1 != 1 && row2 != 1) {
-						throw gcnew ArgumentException("Матрицы должны представлять из себя вектора (a_1,a_2,...,a_n)");
+						throw gcnew ArgumentException("РњР°С‚СЂРёС†С‹ РґРѕР»Р¶РЅС‹ РїСЂРµРґСЃС‚Р°РІР»СЏС‚СЊ РёР· СЃРµР±СЏ РІРµРєС‚РѕСЂР° (a_1,a_2,...,a_n)");
 					}
 					if (column1 != column2) {
-						throw gcnew ArgumentException("Вектора должны быть одного размера");
+						throw gcnew ArgumentException("Р’РµРєС‚РѕСЂР° РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РѕРґРЅРѕРіРѕ СЂР°Р·РјРµСЂР°");
 					}
-					// создание пустой матрицы результата
+					// СЃРѕР·РґР°РЅРёРµ РїСѓСЃС‚РѕР№ РјР°С‚СЂРёС†С‹ СЂРµР·СѓР»СЊС‚Р°С‚Р°
 					for (int i = 0; i < column1; ++i) {
 						matrixResult->Columns->Add("", "");
 					}
 					matrixResult->Rows->Add(1);
-					// разность векторов
+					// СЂР°Р·РЅРѕСЃС‚СЊ РІРµРєС‚РѕСЂРѕРІ
 					int a, b;
 					bool check;
 					for (int i = 0; i < column1; i++){
 						check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[0]->Cells[i]->Value), a);
 						if (!check) {
-							throw gcnew FormatException("В матрице присутствуют не целые числа");
+							throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 						}
 						check = Int32::TryParse(System::Convert::ToString(matrixB->Rows[0]->Cells[i]->Value), b);
 						if (!check) {
-							throw gcnew FormatException("В матрице присутствуют не целые числа");
+							throw gcnew FormatException("Р’ РјР°С‚СЂРёС†Рµ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚ РЅРµ С†РµР»С‹Рµ С‡РёСЃР»Р°");
 						}
 						matrixResult->Rows[0]->Cells[i]->Value = a - b;
 					}
