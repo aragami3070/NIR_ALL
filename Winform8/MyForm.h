@@ -10,7 +10,7 @@ namespace Winform8 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -19,13 +19,13 @@ namespace Winform8 {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm()
 		{
@@ -72,14 +72,14 @@ namespace Winform8 {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -131,7 +131,7 @@ namespace Winform8 {
 			this->btnSaveInFile->Name = L"btnSaveInFile";
 			this->btnSaveInFile->Size = System::Drawing::Size(97, 23);
 			this->btnSaveInFile->TabIndex = 15;
-			this->btnSaveInFile->Text = L"Сохранить как";
+			this->btnSaveInFile->Text = L"РЎРѕС…СЂР°РЅРёС‚СЊ РєР°Рє";
 			this->btnSaveInFile->UseVisualStyleBackColor = true;
 			this->btnSaveInFile->Click += gcnew System::EventHandler(this, &MyForm::btnSaveInFile_Click);
 			// 
@@ -142,7 +142,7 @@ namespace Winform8 {
 			this->btnReadFile->Name = L"btnReadFile";
 			this->btnReadFile->Size = System::Drawing::Size(97, 24);
 			this->btnReadFile->TabIndex = 14;
-			this->btnReadFile->Text = L"Открыть файл";
+			this->btnReadFile->Text = L"РћС‚РєСЂС‹С‚СЊ С„Р°Р№Р»";
 			this->btnReadFile->UseVisualStyleBackColor = true;
 			this->btnReadFile->Click += gcnew System::EventHandler(this, &MyForm::btnReadFile_Click);
 			// 
@@ -164,7 +164,7 @@ namespace Winform8 {
 			// 
 			// inpSurname
 			// 
-			this->inpSurname->HeaderText = L"Фамилия";
+			this->inpSurname->HeaderText = L"Р¤Р°РјРёР»РёСЏ";
 			this->inpSurname->MinimumWidth = 6;
 			this->inpSurname->Name = L"inpSurname";
 			this->inpSurname->Resizable = System::Windows::Forms::DataGridViewTriState::False;
@@ -172,7 +172,7 @@ namespace Winform8 {
 			// 
 			// inpName
 			// 
-			this->inpName->HeaderText = L"Имя";
+			this->inpName->HeaderText = L"РРјСЏ";
 			this->inpName->MinimumWidth = 6;
 			this->inpName->Name = L"inpName";
 			this->inpName->Resizable = System::Windows::Forms::DataGridViewTriState::False;
@@ -180,7 +180,7 @@ namespace Winform8 {
 			// 
 			// inpPatronymic
 			// 
-			this->inpPatronymic->HeaderText = L"Отчество";
+			this->inpPatronymic->HeaderText = L"РћС‚С‡РµСЃС‚РІРѕ";
 			this->inpPatronymic->MinimumWidth = 6;
 			this->inpPatronymic->Name = L"inpPatronymic";
 			this->inpPatronymic->Resizable = System::Windows::Forms::DataGridViewTriState::False;
@@ -188,7 +188,7 @@ namespace Winform8 {
 			// 
 			// inpBirthday
 			// 
-			this->inpBirthday->HeaderText = L"Дата рождения";
+			this->inpBirthday->HeaderText = L"Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ";
 			this->inpBirthday->MinimumWidth = 6;
 			this->inpBirthday->Name = L"inpBirthday";
 			this->inpBirthday->Resizable = System::Windows::Forms::DataGridViewTriState::False;
@@ -196,7 +196,7 @@ namespace Winform8 {
 			// 
 			// inpGrades
 			// 
-			this->inpGrades->HeaderText = L"Оценки";
+			this->inpGrades->HeaderText = L"РћС†РµРЅРєРё";
 			this->inpGrades->MinimumWidth = 6;
 			this->inpGrades->Name = L"inpGrades";
 			this->inpGrades->Resizable = System::Windows::Forms::DataGridViewTriState::False;
@@ -209,7 +209,7 @@ namespace Winform8 {
 			this->btnRemoveRow->Name = L"btnRemoveRow";
 			this->btnRemoveRow->Size = System::Drawing::Size(111, 23);
 			this->btnRemoveRow->TabIndex = 17;
-			this->btnRemoveRow->Text = L"Удалить строку";
+			this->btnRemoveRow->Text = L"РЈРґР°Р»РёС‚СЊ СЃС‚СЂРѕРєСѓ";
 			this->btnRemoveRow->UseVisualStyleBackColor = true;
 			this->btnRemoveRow->Click += gcnew System::EventHandler(this, &MyForm::btnRemoveRow_Click);
 			// 
@@ -220,7 +220,7 @@ namespace Winform8 {
 			this->btnAddRow->Name = L"btnAddRow";
 			this->btnAddRow->Size = System::Drawing::Size(111, 23);
 			this->btnAddRow->TabIndex = 16;
-			this->btnAddRow->Text = L"Добавить строку";
+			this->btnAddRow->Text = L"Р”РѕР±Р°РІРёС‚СЊ СЃС‚СЂРѕРєСѓ";
 			this->btnAddRow->UseVisualStyleBackColor = true;
 			this->btnAddRow->Click += gcnew System::EventHandler(this, &MyForm::btnAddRow_Click);
 			// 
@@ -242,7 +242,7 @@ namespace Winform8 {
 			// 
 			// dataGridViewTextBoxColumn1
 			// 
-			this->dataGridViewTextBoxColumn1->HeaderText = L"Фамилия";
+			this->dataGridViewTextBoxColumn1->HeaderText = L"Р¤Р°РјРёР»РёСЏ";
 			this->dataGridViewTextBoxColumn1->MinimumWidth = 6;
 			this->dataGridViewTextBoxColumn1->Name = L"dataGridViewTextBoxColumn1";
 			this->dataGridViewTextBoxColumn1->Resizable = System::Windows::Forms::DataGridViewTriState::False;
@@ -250,7 +250,7 @@ namespace Winform8 {
 			// 
 			// dataGridViewTextBoxColumn2
 			// 
-			this->dataGridViewTextBoxColumn2->HeaderText = L"Имя";
+			this->dataGridViewTextBoxColumn2->HeaderText = L"РРјСЏ";
 			this->dataGridViewTextBoxColumn2->MinimumWidth = 6;
 			this->dataGridViewTextBoxColumn2->Name = L"dataGridViewTextBoxColumn2";
 			this->dataGridViewTextBoxColumn2->Resizable = System::Windows::Forms::DataGridViewTriState::False;
@@ -258,7 +258,7 @@ namespace Winform8 {
 			// 
 			// dataGridViewTextBoxColumn3
 			// 
-			this->dataGridViewTextBoxColumn3->HeaderText = L"Отчество";
+			this->dataGridViewTextBoxColumn3->HeaderText = L"РћС‚С‡РµСЃС‚РІРѕ";
 			this->dataGridViewTextBoxColumn3->MinimumWidth = 6;
 			this->dataGridViewTextBoxColumn3->Name = L"dataGridViewTextBoxColumn3";
 			this->dataGridViewTextBoxColumn3->Resizable = System::Windows::Forms::DataGridViewTriState::False;
@@ -266,7 +266,7 @@ namespace Winform8 {
 			// 
 			// dataGridViewTextBoxColumn4
 			// 
-			this->dataGridViewTextBoxColumn4->HeaderText = L"Дата рождения";
+			this->dataGridViewTextBoxColumn4->HeaderText = L"Р”Р°С‚Р° СЂРѕР¶РґРµРЅРёСЏ";
 			this->dataGridViewTextBoxColumn4->MinimumWidth = 6;
 			this->dataGridViewTextBoxColumn4->Name = L"dataGridViewTextBoxColumn4";
 			this->dataGridViewTextBoxColumn4->Resizable = System::Windows::Forms::DataGridViewTriState::False;
@@ -274,7 +274,7 @@ namespace Winform8 {
 			// 
 			// dataGridViewTextBoxColumn5
 			// 
-			this->dataGridViewTextBoxColumn5->HeaderText = L"Оценки";
+			this->dataGridViewTextBoxColumn5->HeaderText = L"РћС†РµРЅРєРё";
 			this->dataGridViewTextBoxColumn5->MinimumWidth = 6;
 			this->dataGridViewTextBoxColumn5->Name = L"dataGridViewTextBoxColumn5";
 			this->dataGridViewTextBoxColumn5->Resizable = System::Windows::Forms::DataGridViewTriState::False;
@@ -287,7 +287,7 @@ namespace Winform8 {
 			this->lblInput->Name = L"lblInput";
 			this->lblInput->Size = System::Drawing::Size(54, 13);
 			this->lblInput->TabIndex = 19;
-			this->lblInput->Text = L"Входные:";
+			this->lblInput->Text = L"Р’С…РѕРґРЅС‹Рµ:";
 			// 
 			// lblOuput
 			// 
@@ -296,7 +296,7 @@ namespace Winform8 {
 			this->lblOuput->Name = L"lblOuput";
 			this->lblOuput->Size = System::Drawing::Size(43, 13);
 			this->lblOuput->TabIndex = 20;
-			this->lblOuput->Text = L"Вывод:";
+			this->lblOuput->Text = L"Р’С‹РІРѕРґ:";
 			// 
 			// errorProvider
 			// 
@@ -330,7 +330,7 @@ namespace Winform8 {
 
 		}
 #pragma endregion
-		// Очистка таблиц
+		// РћС‡РёСЃС‚РєР° С‚Р°Р±Р»РёС†
 		void ClearTables() {
 			while (this->dGrInput->RowCount){
 				this->dGrInput->Rows->Remove(this->dGrInput->Rows[this->dGrInput->RowCount - 1]);
@@ -340,7 +340,7 @@ namespace Winform8 {
 			}
 		}
 
-		// Чтение данных
+		// Р§С‚РµРЅРёРµ РґР°РЅРЅС‹С…
 		private: System::Void btnReadFile_Click(System::Object^ sender, System::EventArgs^ e) {
 			this->errorProvider->SetError(this->dGrInput, System::String::Empty);
 			System::IO::Stream^ myStream;
@@ -352,47 +352,47 @@ namespace Winform8 {
 							System::Text::Encoding::GetEncoding(1251)
 						);
 
-					// Очистка таблиц
+					// РћС‡РёСЃС‚РєР° С‚Р°Р±Р»РёС†
 					ClearTables();
 
 					System::String^ strBuf = "";
 					array<System::String^>^ arrBuf;
 					array<System::String^>^ dateBuf;
 					int i = 0;
-					// Вывод в таблицы
+					// Р’С‹РІРѕРґ РІ С‚Р°Р±Р»РёС†С‹
 					while (sw->Peek() + 1) {
 						DateTime dateTemp;
 						this->dGrInput->Rows->Add(1);
-						// Чтение строки из файла
+						// Р§С‚РµРЅРёРµ СЃС‚СЂРѕРєРё РёР· С„Р°Р№Р»Р°
 						strBuf = sw->ReadLine();
 						try {
-							// Вывод ФИО в таблицу dGrInput
+							// Р’С‹РІРѕРґ Р¤РРћ РІ С‚Р°Р±Р»РёС†Сѓ dGrInput
 							arrBuf = strBuf->Split(' ');
 							this->dGrInput->Rows[i]->Cells[0]->Value = arrBuf[0];
 							this->dGrInput->Rows[i]->Cells[1]->Value = arrBuf[1];
 							this->dGrInput->Rows[i]->Cells[2]->Value = arrBuf[2];
 
-							// Проверка на корректность даты
+							// РџСЂРѕРІРµСЂРєР° РЅР° РєРѕСЂСЂРµРєС‚РЅРѕСЃС‚СЊ РґР°С‚С‹
 							dateBuf = arrBuf[3]->Split('.');
 							strBuf = dateBuf[0] + "." + dateBuf[1] + "." + dateBuf[2];
 							bool res = DateTime::TryParse(strBuf, dateTemp);
 							if (!res) {
-								this->errorProvider->SetError(this->dGrInput, "Не корректная дата");
-								// Очистка таблиц
+								this->errorProvider->SetError(this->dGrInput, "РќРµ РєРѕСЂСЂРµРєС‚РЅР°СЏ РґР°С‚Р°");
+								// РћС‡РёСЃС‚РєР° С‚Р°Р±Р»РёС†
 								ClearTables();
 								return;
 							}
-							// Вывод даты в таблицу dGrInput
+							// Р’С‹РІРѕРґ РґР°С‚С‹ РІ С‚Р°Р±Р»РёС†Сѓ dGrInput
 							this->dGrInput->Rows[i]->Cells[3]->Value = dateTemp.Day + "." + dateTemp.Month + "." + dateTemp.Year;
 							int grade;
 							bool flag = true;
-							// Вывод оценок в таблицу dGrInput
+							// Р’С‹РІРѕРґ РѕС†РµРЅРѕРє РІ С‚Р°Р±Р»РёС†Сѓ dGrInput
 							for (int j = 4; j < 9; ++j) {
 								bool res = Int32::TryParse(arrBuf[j], grade);
 
 								if (!res || grade > 5 || grade < 2) {
-									this->errorProvider->SetError(this->dGrInput, "Не корректные оценки");
-									// Очистка таблиц
+									this->errorProvider->SetError(this->dGrInput, "РќРµ РєРѕСЂСЂРµРєС‚РЅС‹Рµ РѕС†РµРЅРєРё");
+									// РћС‡РёСЃС‚РєР° С‚Р°Р±Р»РёС†
 									ClearTables();
 									return;
 								}
@@ -400,16 +400,16 @@ namespace Winform8 {
 									this->dGrInput->Rows[i]->Cells[4]->Value += " " + System::Convert::ToString(grade);
 								}
 								if (grade == 2) {
-									// Если есть 2 в оценках, то flag = false
+									// Р•СЃР»Рё РµСЃС‚СЊ 2 РІ РѕС†РµРЅРєР°С…, С‚Рѕ flag = false
 									flag = false;
 								}
 							}
-							// Если flag == false => есть хотя бы одна 2 => его в таблицу результата выводить не нужно
+							// Р•СЃР»Рё flag == false => РµСЃС‚СЊ С…РѕС‚СЏ Р±С‹ РѕРґРЅР° 2 => РµРіРѕ РІ С‚Р°Р±Р»РёС†Сѓ СЂРµР·СѓР»СЊС‚Р°С‚Р° РІС‹РІРѕРґРёС‚СЊ РЅРµ РЅСѓР¶РЅРѕ
 							if (!flag) {
 								++i;
 								continue;
 							}
-							// Вывод в таблицу dGrOutput сдавших сессию
+							// Р’С‹РІРѕРґ РІ С‚Р°Р±Р»РёС†Сѓ dGrOutput СЃРґР°РІС€РёС… СЃРµСЃСЃРёСЋ
 							this->dGrOutput->Rows->Add(1);
 							for (int j = 0; j < 5; ++j)
 								this->dGrOutput->Rows[
@@ -426,16 +426,16 @@ namespace Winform8 {
 
 		}
 
-		// Добавление строки
+		// Р”РѕР±Р°РІР»РµРЅРёРµ СЃС‚СЂРѕРєРё
 		private: System::Void btnAddRow_Click(System::Object^ sender, System::EventArgs^ e) {
 			this->dGrOutput->Rows->Add(1);
 		}
 
-		// Удаление строки
+		// РЈРґР°Р»РµРЅРёРµ СЃС‚СЂРѕРєРё
 		private: System::Void btnRemoveRow_Click(System::Object^ sender, System::EventArgs^ e) {
 			this->errorProvider->SetError(this->dGrOutput, System::String::Empty);
 			if (!this->dGrOutput->CurrentRow) {
-				this->errorProvider->SetError(this->dGrOutput, "Нельзя удалить несуществующую строку");
+				this->errorProvider->SetError(this->dGrOutput, "РќРµР»СЊР·СЏ СѓРґР°Р»РёС‚СЊ РЅРµСЃСѓС‰РµСЃС‚РІСѓСЋС‰СѓСЋ СЃС‚СЂРѕРєСѓ");
 				return;
 			}
 			if (!this->dGrOutput->CurrentRow->IsNewRow) {
@@ -444,43 +444,43 @@ namespace Winform8 {
 			}
 		}
 
-		// Перевод строки из таблицы в строку для вывода в файл
+		// РџРµСЂРµРІРѕРґ СЃС‚СЂРѕРєРё РёР· С‚Р°Р±Р»РёС†С‹ РІ СЃС‚СЂРѕРєСѓ РґР»СЏ РІС‹РІРѕРґР° РІ С„Р°Р№Р»
 		System::String^ dGrOutputToString(int i) {
 			this->errorProvider->SetError(this->dGrOutput, System::String::Empty);
 			System::String^ buff = "";
 			System::String^ strBuf = "";
-			// Проверяем ФИО
+			// РџСЂРѕРІРµСЂСЏРµРј Р¤РРћ
 			for (int j = 0; j < 3; ++j) {
 				if (System::Convert::ToString(this->dGrOutput->Rows[i]->Cells[j]->Value)->Trim() == "") {
-					this->errorProvider->SetError(this->dGrOutput, "Не корректное ФИО");
+					this->errorProvider->SetError(this->dGrOutput, "РќРµ РєРѕСЂСЂРµРєС‚РЅРѕРµ Р¤РРћ");
 					return " ";
 				}
 			}
-			// Проверяем дату
+			// РџСЂРѕРІРµСЂСЏРµРј РґР°С‚Сѓ
 			DateTime dateBuf;
 			array<System::String^>^ arrDate;
 			strBuf = System::Convert::ToString(this->dGrOutput->Rows[i]->Cells[3]->Value);
 			arrDate = strBuf->Split('.');
 			if (arrDate->Length != 3) {
-				this->errorProvider->SetError(this->dGrOutput, "Не корректная дата");
+				this->errorProvider->SetError(this->dGrOutput, "РќРµ РєРѕСЂСЂРµРєС‚РЅР°СЏ РґР°С‚Р°");
 				return " ";
 			}
 			strBuf = arrDate[0] + "." + arrDate[1] + "." + arrDate[2];
 			if (!DateTime::TryParse(strBuf, dateBuf)) { 
-				this->errorProvider->SetError(this->dGrOutput, "Не корректная дата");
+				this->errorProvider->SetError(this->dGrOutput, "РќРµ РєРѕСЂСЂРµРєС‚РЅР°СЏ РґР°С‚Р°");
 				return " ";
 			}
-			// Проверяем оценки
+			// РџСЂРѕРІРµСЂСЏРµРј РѕС†РµРЅРєРё
 			int grade;
 			array<System::String^>^ strGrade = System::Convert::ToString(this->dGrOutput->Rows[i]->Cells[4]->Value)->Trim()->Split(' ');
 			if (strGrade->Length != 5) {
-				this->errorProvider->SetError(this->dGrOutput, "Не корректное кол-во оценок (должно быть ровно 5)");
+				this->errorProvider->SetError(this->dGrOutput, "РќРµ РєРѕСЂСЂРµРєС‚РЅРѕРµ РєРѕР»-РІРѕ РѕС†РµРЅРѕРє (РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ СЂРѕРІРЅРѕ 5)");
 				return " ";
 			}
 			for (int j = 0; j < 5; ++j) {
 				bool res = Int32::TryParse(strGrade[j], grade);
 				if (!res || grade > 5 || grade < 3) {
-					this->errorProvider->SetError(this->dGrOutput, "Не корректные оценки (для зачета должны быть не меньше 3):" + this->dGrOutput->Rows[i]->Cells[4]->Value);
+					this->errorProvider->SetError(this->dGrOutput, "РќРµ РєРѕСЂСЂРµРєС‚РЅС‹Рµ РѕС†РµРЅРєРё (РґР»СЏ Р·Р°С‡РµС‚Р° РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РЅРµ РјРµРЅСЊС€Рµ 3):" + this->dGrOutput->Rows[i]->Cells[4]->Value);
 					return " ";
 				}
 			}
@@ -498,7 +498,7 @@ namespace Winform8 {
 			return strBuf;
 		}
 
-		// Сохранение файла
+		// РЎРѕС…СЂР°РЅРµРЅРёРµ С„Р°Р№Р»Р°
 		private: System::Void btnSaveInFile_Click(System::Object^ sender, System::EventArgs^ e) {
 			System::IO::Stream^ myStream;
 			if (this->saveFileDialog->ShowDialog() == System::Windows::Forms::DialogResult::OK)
