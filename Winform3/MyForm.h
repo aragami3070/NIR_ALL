@@ -11,7 +11,7 @@ namespace Winform3 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -20,13 +20,13 @@ namespace Winform3 {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm()
 		{
@@ -57,14 +57,14 @@ namespace Winform3 {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -90,7 +90,7 @@ namespace Winform3 {
 			this->btnStart->Name = L"btnStart";
 			this->btnStart->Size = System::Drawing::Size(109, 47);
 			this->btnStart->TabIndex = 0;
-			this->btnStart->Text = L"Вычислить";
+			this->btnStart->Text = L"Р’С‹С‡РёСЃР»РёС‚СЊ";
 			this->btnStart->UseVisualStyleBackColor = true;
 			this->btnStart->Click += gcnew System::EventHandler(this, &MyForm::btnStart_Click);
 			// 
@@ -125,7 +125,7 @@ namespace Winform3 {
 			this->lblResult->Name = L"lblResult";
 			this->lblResult->Size = System::Drawing::Size(91, 23);
 			this->lblResult->TabIndex = 3;
-			this->lblResult->Text = L"Результат:";
+			this->lblResult->Text = L"Р РµР·СѓР»СЊС‚Р°С‚:";
 			// 
 			// txtInX
 			// 
@@ -178,7 +178,7 @@ namespace Winform3 {
 			this->Controls->Add(this->lblX);
 			this->Controls->Add(this->btnStart);
 			this->Name = L"MyForm";
-			this->Text = L"Рекурсивное нахождение X^N";
+			this->Text = L"Р РµРєСѓСЂСЃРёРІРЅРѕРµ РЅР°С…РѕР¶РґРµРЅРёРµ X^N";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider2))->EndInit();
 			this->ResumeLayout(false);
@@ -186,7 +186,7 @@ namespace Winform3 {
 
 		}
 #pragma endregion
-	private: void ClearAll() { // очистка полей
+	private: void ClearAll() { // РѕС‡РёСЃС‚РєР° РїРѕР»РµР№
 		this->txtOut->Text = "";
 		errorProvider1->SetError(txtInX, String::Empty);
 		errorProvider2->SetError(txtInN , String::Empty);
@@ -195,25 +195,25 @@ namespace Winform3 {
 		ClearAll();
 		double InputX;
 		long long InputN;
-		// переводим сторку из TextBox в число
+		// РїРµСЂРµРІРѕРґРёРј СЃС‚РѕСЂРєСѓ РёР· TextBox РІ С‡РёСЃР»Рѕ
 		bool parseX = double::TryParse(this->txtInX->Text, InputX);
 		bool parseN = Int64::TryParse(this->txtInN->Text, InputN);
-		// ввели не число
+		// РІРІРµР»Рё РЅРµ С‡РёСЃР»Рѕ
 		if (!parseX) {
-			errorProvider1->SetError(txtInX, "X не число");
+			errorProvider1->SetError(txtInX, "X РЅРµ С‡РёСЃР»Рѕ");
 			if (!parseN) {
-				errorProvider2->SetError(txtInN, "N не целое число");
+				errorProvider2->SetError(txtInN, "N РЅРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ");
 			}
 		}
 		else if (!parseN) {
-			errorProvider2->SetError(txtInN, "N не целое число");
+			errorProvider2->SetError(txtInN, "N РЅРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ");
 		}
 		else {
-			// все нормально 
+			// РІСЃРµ РЅРѕСЂРјР°Р»СЊРЅРѕ 
 			double result;
-			// вычисляем результат
+			// РІС‹С‡РёСЃР»СЏРµРј СЂРµР·СѓР»СЊС‚Р°С‚
 			result = recursion(InputX, InputN);
-			// записываем в поле вывода
+			// Р·Р°РїРёСЃС‹РІР°РµРј РІ РїРѕР»Рµ РІС‹РІРѕРґР°
 			this->txtOut->Text = System::Convert::ToString(result);
 		}
 	}
