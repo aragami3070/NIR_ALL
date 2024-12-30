@@ -377,7 +377,7 @@ namespace Winform8 {
 							strBuf = dateBuf[0] + "." + dateBuf[1] + "." + dateBuf[2];
 							bool res = DateTime::TryParse(strBuf, dateTemp);
 							if (!res) {
-								this->errorProvider->SetError(this->dGrInput, "invalid date");
+								this->errorProvider->SetError(this->dGrInput, "Не корректная дата");
 								// Очистка таблиц
 								ClearTables();
 								return;
@@ -462,25 +462,25 @@ namespace Winform8 {
 			strBuf = System::Convert::ToString(this->dGrOutput->Rows[i]->Cells[3]->Value);
 			arrDate = strBuf->Split('.');
 			if (arrDate->Length != 3) {
-				this->errorProvider->SetError(this->dGrOutput, "invalid date");
+				this->errorProvider->SetError(this->dGrOutput, "Не корректная дата");
 				return " ";
 			}
 			strBuf = arrDate[0] + "." + arrDate[1] + "." + arrDate[2];
 			if (!DateTime::TryParse(strBuf, dateBuf)) { 
-				this->errorProvider->SetError(this->dGrOutput, "invalid date");
+				this->errorProvider->SetError(this->dGrOutput, "Не корректная дата");
 				return " ";
 			}
 			// Проверяем оценки
 			int grade;
 			array<System::String^>^ strGrade = System::Convert::ToString(this->dGrOutput->Rows[i]->Cells[4]->Value)->Trim()->Split(' ');
 			if (strGrade->Length != 5) {
-				this->errorProvider->SetError(this->dGrOutput, "unappropriate number of grades");
+				this->errorProvider->SetError(this->dGrOutput, "Не корректное кол-во оценок (должно быть ровно 5)");
 				return " ";
 			}
 			for (int j = 0; j < 5; ++j) {
 				bool res = Int32::TryParse(strGrade[j], grade);
-				if (!res || grade > 5 || grade < 0) {
-					this->errorProvider->SetError(this->dGrOutput, "invalid grades:" + this->dGrOutput->Rows[i]->Cells[4]->Value);
+				if (!res || grade > 5 || grade < 3) {
+					this->errorProvider->SetError(this->dGrOutput, "Не корректные оценки (для зачета должны быть не меньше 3):" + this->dGrOutput->Rows[i]->Cells[4]->Value);
 					return " ";
 				}
 			}
