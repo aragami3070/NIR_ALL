@@ -10,7 +10,7 @@ namespace Winform4 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -19,13 +19,13 @@ namespace Winform4 {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm()
 		{
@@ -74,14 +74,14 @@ namespace Winform4 {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -142,7 +142,7 @@ namespace Winform4 {
 			this->AddBtn->Name = L"AddBtn";
 			this->AddBtn->Size = System::Drawing::Size(99, 35);
 			this->AddBtn->TabIndex = 2;
-			this->AddBtn->Text = L"Добавить";
+			this->AddBtn->Text = L"Р”РѕР±Р°РІРёС‚СЊ";
 			this->AddBtn->UseVisualStyleBackColor = true;
 			this->AddBtn->Click += gcnew System::EventHandler(this, &MyForm::AddBtn_Click);
 			// 
@@ -154,7 +154,7 @@ namespace Winform4 {
 			this->DelBtn->Name = L"DelBtn";
 			this->DelBtn->Size = System::Drawing::Size(99, 35);
 			this->DelBtn->TabIndex = 3;
-			this->DelBtn->Text = L"Удалить";
+			this->DelBtn->Text = L"РЈРґР°Р»РёС‚СЊ";
 			this->DelBtn->UseVisualStyleBackColor = true;
 			this->DelBtn->Click += gcnew System::EventHandler(this, &MyForm::DelBtn_Click);
 			// 
@@ -187,7 +187,7 @@ namespace Winform4 {
 			this->lblInterval1->Name = L"lblInterval1";
 			this->lblInterval1->Size = System::Drawing::Size(96, 20);
 			this->lblInterval1->TabIndex = 6;
-			this->lblInterval1->Text = L"Интервал: [";
+			this->lblInterval1->Text = L"РРЅС‚РµСЂРІР°Р»: [";
 			// 
 			// lblInterval2
 			// 
@@ -226,7 +226,7 @@ namespace Winform4 {
 			this->SumBtn->Name = L"SumBtn";
 			this->SumBtn->Size = System::Drawing::Size(75, 35);
 			this->SumBtn->TabIndex = 10;
-			this->SumBtn->Text = L"Сумма";
+			this->SumBtn->Text = L"РЎСѓРјРјР°";
 			this->SumBtn->UseVisualStyleBackColor = true;
 			this->SumBtn->Click += gcnew System::EventHandler(this, &MyForm::SumBtn_Click);
 			// 
@@ -249,7 +249,7 @@ namespace Winform4 {
 			this->lblSum->Name = L"lblSum";
 			this->lblSum->Size = System::Drawing::Size(62, 20);
 			this->lblSum->TabIndex = 11;
-			this->lblSum->Text = L"Сумма:";
+			this->lblSum->Text = L"РЎСѓРјРјР°:";
 			// 
 			// MaxTxtBox
 			// 
@@ -270,7 +270,7 @@ namespace Winform4 {
 			this->label1->Name = L"label1";
 			this->label1->Size = System::Drawing::Size(183, 40);
 			this->label1->TabIndex = 14;
-			this->label1->Text = L"Номера максимальных\r\nнечетных элементов:";
+			this->label1->Text = L"РќРѕРјРµСЂР° РјР°РєСЃРёРјР°Р»СЊРЅС‹С…\r\nРЅРµС‡РµС‚РЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ:";
 			// 
 			// MaxBtn
 			// 
@@ -280,7 +280,7 @@ namespace Winform4 {
 			this->MaxBtn->Name = L"MaxBtn";
 			this->MaxBtn->Size = System::Drawing::Size(147, 50);
 			this->MaxBtn->TabIndex = 13;
-			this->MaxBtn->Text = L"Максимальные элементы";
+			this->MaxBtn->Text = L"РњР°РєСЃРёРјР°Р»СЊРЅС‹Рµ СЌР»РµРјРµРЅС‚С‹";
 			this->MaxBtn->UseVisualStyleBackColor = true;
 			this->MaxBtn->Click += gcnew System::EventHandler(this, &MyForm::MaxBtn_Click);
 			// 
@@ -318,7 +318,7 @@ namespace Winform4 {
 			this->Controls->Add(this->lbl1);
 			this->Controls->Add(this->ArDtGr);
 			this->Name = L"MyForm";
-			this->Text = L"Обработка табличных данных. Часть 1.";
+			this->Text = L"РћР±СЂР°Р±РѕС‚РєР° С‚Р°Р±Р»РёС‡РЅС‹С… РґР°РЅРЅС‹С…. Р§Р°СЃС‚СЊ 1.";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->ArDtGr))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider1))->EndInit();
@@ -329,7 +329,7 @@ namespace Winform4 {
 
 		}
 #pragma endregion
-	// очистка полей
+	// РѕС‡РёСЃС‚РєР° РїРѕР»РµР№
 	private: void ClearAll() { 
 		this->SumTxtBox->Text = "";
 		this->MaxTxtBox->Text = "";
@@ -339,7 +339,7 @@ namespace Winform4 {
 	}
 
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
-		ArDtGr->Columns->Add("ArColumn", "Массив");
+		ArDtGr->Columns->Add("ArColumn", "РњР°СЃСЃРёРІ");
 		for (int i = 0; i < 7; i++) {
 			ArDtGr->Rows->Add();
 		}
@@ -351,15 +351,15 @@ namespace Winform4 {
 		ArDtGr->Rows[5]->Cells[0]->Value = (long long)5;
 		ArDtGr->Rows[6]->Cells[0]->Value = (long long)7;
 	}
-	// вставка строки
+	// РІСЃС‚Р°РІРєР° СЃС‚СЂРѕРєРё
 	private: System::Void AddBtn_Click(System::Object^ sender, System::EventArgs^ e) {
 		ClearAll();
 		long long InputX;
-		// переводим сторку из TextBox в число
+		// РїРµСЂРµРІРѕРґРёРј СЃС‚РѕСЂРєСѓ РёР· TextBox РІ С‡РёСЃР»Рѕ
 		bool parseX = Int64::TryParse(this->XTxtBox->Text, InputX);
-		// ввели не число
+		// РІРІРµР»Рё РЅРµ С‡РёСЃР»Рѕ
 		if (!parseX) {
-			errorProvider1->SetError(XTxtBox, "X не число");
+			errorProvider1->SetError(XTxtBox, "X РЅРµ С‡РёСЃР»Рѕ");
 		}
 		else {
 			ArDtGr->Rows->Add();
@@ -367,7 +367,7 @@ namespace Winform4 {
 		}
 	}
 
-	// удаление строки
+	// СѓРґР°Р»РµРЅРёРµ СЃС‚СЂРѕРєРё
 	private: System::Void DelBtn_Click(System::Object^ sender, System::EventArgs^ e) {
 		ClearAll();
 		if (ArDtGr->RowCount != 0) {
@@ -375,31 +375,31 @@ namespace Winform4 {
 		}
 	}
 
-	// среднее арифметическое
+	// СЃСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ
 	private: System::Void SumBtn_Click(System::Object^ sender, System::EventArgs^ e) {
 		ClearAll();
 		long long InputA;
 		long long InputB;
-		// переводим сторку из TextBox в число
+		// РїРµСЂРµРІРѕРґРёРј СЃС‚РѕСЂРєСѓ РёР· TextBox РІ С‡РёСЃР»Рѕ
 		bool parseA = Int64::TryParse(this->ATxtBox->Text, InputA);
 		bool parseB = Int64::TryParse(this->BTxtBox->Text, InputB);
 		if (!parseA) {
-			errorProvider2->SetError(ATxtBox, "A не число");
+			errorProvider2->SetError(ATxtBox, "A РЅРµ С‡РёСЃР»Рѕ");
 			if (!parseB) {
-				errorProvider3->SetError(BTxtBox, "B не число");
+				errorProvider3->SetError(BTxtBox, "B РЅРµ С‡РёСЃР»Рѕ");
 			}
 		}
 		else if (!parseB) {
-			errorProvider3->SetError(BTxtBox, "B не число");
+			errorProvider3->SetError(BTxtBox, "B РЅРµ С‡РёСЃР»Рѕ");
 		}
 		else if (InputA < 0) {
-			errorProvider2->SetError(ATxtBox, "А не может быть отрицательным");
+			errorProvider2->SetError(ATxtBox, "Рђ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕС‚СЂРёС†Р°С‚РµР»СЊРЅС‹Рј");
 		}
 		else if (InputB > ArDtGr->RowCount -1) {
-			errorProvider3->SetError(BTxtBox, "B больше чем кол-во элементов");
+			errorProvider3->SetError(BTxtBox, "B Р±РѕР»СЊС€Рµ С‡РµРј РєРѕР»-РІРѕ СЌР»РµРјРµРЅС‚РѕРІ");
 		}
 		else {
-			// подсчет среднего арифметического
+			// РїРѕРґСЃС‡РµС‚ СЃСЂРµРґРЅРµРіРѕ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРіРѕ
 			long long countres = 0;
 			long long count = 0;
 			double res = 0;
@@ -420,13 +420,13 @@ namespace Winform4 {
 			res -= sum;
 			countres -= count;
 
-			// обработка случая, где таких элементов нет
+			// РѕР±СЂР°Р±РѕС‚РєР° СЃР»СѓС‡Р°СЏ, РіРґРµ С‚Р°РєРёС… СЌР»РµРјРµРЅС‚РѕРІ РЅРµС‚
 			if (res != 0 && countres != 0) {
 				res = (res) / countres;
 				this->SumTxtBox->Text = res.ToString();
 			}
 			else {
-				this->SumTxtBox->Text = "Таких элементов нет";
+				this->SumTxtBox->Text = "РўР°РєРёС… СЌР»РµРјРµРЅС‚РѕРІ РЅРµС‚";
 			}
 		}
 	}
@@ -445,7 +445,7 @@ namespace Winform4 {
 			}
 			catch (const std::exception&)
 			{
-				this->MaxTxtBox->Text = "В таблице есть не числа";
+				this->MaxTxtBox->Text = "Р’ С‚Р°Р±Р»РёС†Рµ РµСЃС‚СЊ РЅРµ С‡РёСЃР»Р°";
 				flag = true;
 			}
 		}
@@ -459,7 +459,7 @@ namespace Winform4 {
 			}
 		}
 		else if (flag == false) {
-			this->MaxTxtBox->Text = "Нет нечетных элементов";
+			this->MaxTxtBox->Text = "РќРµС‚ РЅРµС‡РµС‚РЅС‹С… СЌР»РµРјРµРЅС‚РѕРІ";
 		}
 	}
 };
