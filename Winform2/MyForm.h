@@ -12,7 +12,7 @@ namespace Winform2 {
 	using namespace System::Drawing;
 
 	/// <summary>
-	/// Сводка для MyForm
+	/// РЎРІРѕРґРєР° РґР»СЏ MyForm
 	/// </summary>
 	public ref class MyForm : public System::Windows::Forms::Form
 	{
@@ -21,13 +21,13 @@ namespace Winform2 {
 		{
 			InitializeComponent();
 			//
-			//TODO: добавьте код конструктора
+			//TODO: РґРѕР±Р°РІСЊС‚Рµ РєРѕРґ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°
 			//
 		}
 
 	protected:
 		/// <summary>
-		/// Освободить все используемые ресурсы.
+		/// РћСЃРІРѕР±РѕРґРёС‚СЊ РІСЃРµ РёСЃРїРѕР»СЊР·СѓРµРјС‹Рµ СЂРµСЃСѓСЂСЃС‹.
 		/// </summary>
 		~MyForm()
 		{
@@ -55,14 +55,14 @@ namespace Winform2 {
 
 	private:
 		/// <summary>
-		/// Обязательная переменная конструктора.
+		/// РћР±СЏР·Р°С‚РµР»СЊРЅР°СЏ РїРµСЂРµРјРµРЅРЅР°СЏ РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР°.
 		/// </summary>
 
 
 #pragma region Windows Form Designer generated code
 		/// <summary>
-		/// Требуемый метод для поддержки конструктора — не изменяйте 
-		/// содержимое этого метода с помощью редактора кода.
+		/// РўСЂРµР±СѓРµРјС‹Р№ РјРµС‚РѕРґ РґР»СЏ РїРѕРґРґРµСЂР¶РєРё РєРѕРЅСЃС‚СЂСѓРєС‚РѕСЂР° вЂ” РЅРµ РёР·РјРµРЅСЏР№С‚Рµ 
+		/// СЃРѕРґРµСЂР¶РёРјРѕРµ СЌС‚РѕРіРѕ РјРµС‚РѕРґР° СЃ РїРѕРјРѕС‰СЊСЋ СЂРµРґР°РєС‚РѕСЂР° РєРѕРґР°.
 		/// </summary>
 		void InitializeComponent(void)
 		{
@@ -125,7 +125,7 @@ namespace Winform2 {
 			this->lblInputX->Name = L"lblInputX";
 			this->lblInputX->Size = System::Drawing::Size(98, 22);
 			this->lblInputX->TabIndex = 3;
-			this->lblInputX->Text = L"Введите X:";
+			this->lblInputX->Text = L"Р’РІРµРґРёС‚Рµ X:";
 			// 
 			// lblInputY
 			// 
@@ -136,7 +136,7 @@ namespace Winform2 {
 			this->lblInputY->Name = L"lblInputY";
 			this->lblInputY->Size = System::Drawing::Size(98, 22);
 			this->lblInputY->TabIndex = 4;
-			this->lblInputY->Text = L"Введите Y:";
+			this->lblInputY->Text = L"Р’РІРµРґРёС‚Рµ Y:";
 			// 
 			// errorProvider1
 			// 
@@ -178,7 +178,7 @@ namespace Winform2 {
 			this->btnStart->Name = L"btnStart";
 			this->btnStart->Size = System::Drawing::Size(119, 36);
 			this->btnStart->TabIndex = 8;
-			this->btnStart->Text = L"Вычислить";
+			this->btnStart->Text = L"Р’С‹С‡РёСЃР»РёС‚СЊ";
 			this->btnStart->UseVisualStyleBackColor = true;
 			this->btnStart->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
 			// 
@@ -201,7 +201,7 @@ namespace Winform2 {
 			this->Controls->Add(this->lblFor1);
 			this->Controls->Add(this->label2);
 			this->Name = L"MyForm";
-			this->Text = L"Простые вычисления";
+			this->Text = L"РџСЂРѕСЃС‚С‹Рµ РІС‹С‡РёСЃР»РµРЅРёСЏ";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider1))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider2))->EndInit();
 			this->ResumeLayout(false);
@@ -210,7 +210,7 @@ namespace Winform2 {
 		}
 #pragma endregion
 
-	private: void ClearAll() { // очистка полей
+	private: void ClearAll() { // РѕС‡РёСЃС‚РєР° РїРѕР»РµР№
 		this->txtOut->Text = "";
 		errorProvider1->SetError(txtInX, String::Empty);
 		errorProvider2->SetError(txtInY, String::Empty);
@@ -220,31 +220,31 @@ namespace Winform2 {
 		ClearAll();
 		long long InputX;
 		long long InputY;
-		// переводим сторку из TextBox в число
+		// РїРµСЂРµРІРѕРґРёРј СЃС‚РѕСЂРєСѓ РёР· TextBox РІ С‡РёСЃР»Рѕ
 		bool parseX = Int64::TryParse(this->txtInX->Text, InputX);
 		bool parseY = Int64::TryParse(this->txtInY->Text, InputY);
-		// ввели не число
+		// РІРІРµР»Рё РЅРµ С‡РёСЃР»Рѕ
 		if (!parseX) {
-			errorProvider1->SetError(txtInX, "Введено не целое число");
+			errorProvider1->SetError(txtInX, "Р’РІРµРґРµРЅРѕ РЅРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ");
 			if (!parseY) {
-				errorProvider2->SetError(txtInY, "Введено не целое число");
+				errorProvider2->SetError(txtInY, "Р’РІРµРґРµРЅРѕ РЅРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ");
 			}
 		}
 		else if (!parseY) {
-			errorProvider2->SetError(txtInY, "Введено не целое число");
+			errorProvider2->SetError(txtInY, "Р’РІРµРґРµРЅРѕ РЅРµ С†РµР»РѕРµ С‡РёСЃР»Рѕ");
 		}
-		// проверка на деление на ноль
+		// РїСЂРѕРІРµСЂРєР° РЅР° РґРµР»РµРЅРёРµ РЅР° РЅРѕР»СЊ
 		else {
 			if ((InputX == 0 && InputY == 0) || 
 				(InputX == -4 && abs(InputY) == 2)) {
-				errorProvider1->SetError(txtInX, "Деление на ноль");
-				errorProvider2->SetError(txtInY, "Деление на ноль");
+				errorProvider1->SetError(txtInX, "Р”РµР»РµРЅРёРµ РЅР° РЅРѕР»СЊ");
+				errorProvider2->SetError(txtInY, "Р”РµР»РµРЅРёРµ РЅР° РЅРѕР»СЊ");
 			}
 			else{
-				// все нормально
-				// результат
+				// РІСЃРµ РЅРѕСЂРјР°Р»СЊРЅРѕ
+				// СЂРµР·СѓР»СЊС‚Р°С‚
 				double resOutput = solve(InputX, InputY);
-				// записываем в поле вывода
+				// Р·Р°РїРёСЃС‹РІР°РµРј РІ РїРѕР»Рµ РІС‹РІРѕРґР°
 				this->txtOut->Text = System::Convert::ToString(resOutput);
 			}
 		}
