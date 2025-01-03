@@ -44,8 +44,10 @@ namespace Winform3 {
 	private: System::Windows::Forms::TextBox^ txtInX;
 	private: System::Windows::Forms::TextBox^ txtInN;
 	private: System::Windows::Forms::TextBox^ txtOut;
-	private: System::Windows::Forms::ErrorProvider^ errorProvider1;
-	private: System::Windows::Forms::ErrorProvider^ errorProvider2;
+	private: System::Windows::Forms::ErrorProvider^ errPrX;
+	private: System::Windows::Forms::ErrorProvider^ errPrN;
+
+
 	private: System::ComponentModel::IContainer^ components;
 	protected:
 
@@ -76,10 +78,10 @@ namespace Winform3 {
 			this->txtInX = (gcnew System::Windows::Forms::TextBox());
 			this->txtInN = (gcnew System::Windows::Forms::TextBox());
 			this->txtOut = (gcnew System::Windows::Forms::TextBox());
-			this->errorProvider1 = (gcnew System::Windows::Forms::ErrorProvider(this->components));
-			this->errorProvider2 = (gcnew System::Windows::Forms::ErrorProvider(this->components));
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider1))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider2))->BeginInit();
+			this->errPrX = (gcnew System::Windows::Forms::ErrorProvider(this->components));
+			this->errPrN = (gcnew System::Windows::Forms::ErrorProvider(this->components));
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errPrX))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errPrN))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// btnStart
@@ -157,13 +159,13 @@ namespace Winform3 {
 			this->txtOut->Size = System::Drawing::Size(276, 146);
 			this->txtOut->TabIndex = 6;
 			// 
-			// errorProvider1
+			// errPrX
 			// 
-			this->errorProvider1->ContainerControl = this;
+			this->errPrX->ContainerControl = this;
 			// 
-			// errorProvider2
+			// errPrN
 			// 
-			this->errorProvider2->ContainerControl = this;
+			this->errPrN->ContainerControl = this;
 			// 
 			// MyForm
 			// 
@@ -179,8 +181,8 @@ namespace Winform3 {
 			this->Controls->Add(this->btnStart);
 			this->Name = L"MyForm";
 			this->Text = L"Рекурсивное нахождение X^N";
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider1))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider2))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errPrX))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errPrN))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -188,8 +190,8 @@ namespace Winform3 {
 #pragma endregion
 	private: void ClearAll() { // очистка полей
 		this->txtOut->Text = "";
-		errorProvider1->SetError(txtInX, String::Empty);
-		errorProvider2->SetError(txtInN , String::Empty);
+		errPrX->SetError(txtInX, String::Empty);
+		errPrN->SetError(txtInN , String::Empty);
 	}
 	private: System::Void btnStart_Click(System::Object^ sender, System::EventArgs^ e) {
 		ClearAll();
@@ -200,13 +202,13 @@ namespace Winform3 {
 		bool parseN = Int64::TryParse(this->txtInN->Text, InputN);
 		// ввели не число
 		if (!parseX) {
-			errorProvider1->SetError(txtInX, "X не число");
+			errPrX->SetError(txtInX, "X не число");
 			if (!parseN) {
-				errorProvider2->SetError(txtInN, "N не целое число");
+				errPrN->SetError(txtInN, "N не целое число");
 			}
 		}
 		else if (!parseN) {
-			errorProvider2->SetError(txtInN, "N не целое число");
+			errPrN->SetError(txtInN, "N не целое число");
 		}
 		else {
 			// все нормально 
