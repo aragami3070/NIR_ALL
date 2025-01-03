@@ -1023,7 +1023,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 						bool check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[0]->Cells[i]->Value), a);
 						// Проверка на не целые числа
 						if (!check){
-							throw gcnew FormatException("В присутствуют не целые числа");
+							throw gcnew FormatException("В матрице присутствуют не целые числа");
 						}
 						matrixAinp[i] = a;
 					}
@@ -1034,7 +1034,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 						bool check = Int32::TryParse(System::Convert::ToString(matrixB->Rows[0]->Cells[i]->Value), b);
 						// Проверка на не целые числа
 						if (!check){
-							throw gcnew FormatException("В присутствуют не целые числа");
+							throw gcnew FormatException("В матрице присутствуют не целые числа");
 						}
 						matrixBinp[i] = b;
 					}
