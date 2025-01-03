@@ -534,13 +534,16 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			}
 			matrixA->Rows->Add(row);
 			
+			// Если кнопка единичной матрицы нажата, то создаем единичную матрицу
 			if (rBtnUnitMatrix->Checked) {
 				if (row == column) {
 					for (int i = 0; i < row; ++i) {
 						for (int j = 0; j < column; ++j) {
+							// Если главная диагональ, то элемент == 1
 							if (i == j) {
 								matrixA->Rows[i]->Cells[j]->Value = 1;
 							}
+							// Иначе == 0
 							else{
 								matrixA->Rows[i]->Cells[j]->Value = 0;
 							}
@@ -587,13 +590,16 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			}
 			matrixB->Rows->Add(row);
 			
+			// Если кнопка единичной матрицы нажата, то создаем единичную матрицу
 			if (rBtnUnitMatrix->Checked) {
 				if (row == column) {
 					for (int i = 0; i < row; ++i) {
 						for (int j = 0; j < column; ++j) {
+							// Если главная диагональ, то элемент == 1
 							if (i == j) {
 								matrixB->Rows[i]->Cells[j]->Value = 1;
 							}
+							// Иначе == 0
 							else{
 								matrixB->Rows[i]->Cells[j]->Value = 0;
 							}
@@ -650,6 +656,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			bool check;
 			for (int i = 0; i < row; i++) {
 				for (int j = 0; j < column; j++) {
+					// Проверки
 					check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[i]->Cells[j]->Value), a);
 					if (!check) {
 						throw gcnew FormatException("В матрице присутствуют не целые числа");
@@ -658,6 +665,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					if (!check) {
 						throw gcnew FormatException("В матрице присутствуют не целые числа");
 					}
+					// Сумма
 					matrixResult->Rows[i]->Cells[j]->Value = a + b;
 				}
 			}
@@ -669,6 +677,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			bool check;
 			for (int i = 0; i < row; i++) {
 				for (int j = 0; j < column; j++) {
+					// Проверки
 					check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[i]->Cells[j]->Value), a);
 					if (!check) {
 						throw gcnew FormatException("В матрице присутствуют не целые числа");
@@ -677,6 +686,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					if (!check) {
 						throw gcnew FormatException("В матрице присутствуют не целые числа");
 					}
+					// Разность 
 					matrixResult->Rows[i]->Cells[j]->Value = a - b;
 				}
 			}
@@ -688,10 +698,12 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			bool check;
 			for (int i = 0; i < row; i++) {
 				for (int j = 0; j < column; j++) {
+					// Проверка на не целое число
 					check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[i]->Cells[j]->Value), a);
 					if (!check) {
 						throw gcnew FormatException("В матрице присутствуют не целые числа");
 					}
+					// Умножение на число
 					matrixResult->Rows[i]->Cells[j]->Value = a * num;
 				}
 			}
@@ -712,7 +724,6 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			// разложение по Лапласу
 			else {
 				for (int i = 0; i < size; ++i) {
-					//
 					int** addition = new int* [size - 1];
 					for (int j = 0; j < size - 1; ++j) {
 						addition[j] = new int[size - 1];
@@ -744,18 +755,36 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 
 		// Нахождение ранга
 		int Rank(int** matrix, int row, int column) {
+			if (row > column) {
+				column = row;
+			}
+			else {
+				row = column;
+			}
+
+			// Заполняем доп матрицу, если она не квадратная изначально
+			// то добавляем недостающее кол-во строк/столбцов с элементами = 0
 			double** tempMatrix = new double* [row];
 			for (int i = 0; i < row; ++i) {
-				tempMatrix[i] = new double[column];
+				tempMatrix[i] = new double[row];
 				for (int j = 0; j < column; ++j) {
-					tempMatrix[i][j] = matrix[i][j];
+					if (i >= matrixA->RowCount) {
+						tempMatrix[i][j] = 0;
+					}
+					else if (j >= matrixA->ColumnCount) {
+						tempMatrix[i][j] = 0;
+					}
+					else {
+						tempMatrix[i][j] = matrix[i][j];
+					}
 				}
 			}
 
-			int rank = column;
+			int rank = row;
 			for (int row_i = 0; row_i < rank; ++row_i) {
+				// Если диагональный элемент != 0
 				if (tempMatrix[row_i][row_i]) {
-					for (int column_i = 0; column_i < row; ++column_i) {
+					for (int column_i = 0; column_i < column; ++column_i) {
 						if (column_i != row_i) {
 							double mult = tempMatrix[column_i][row_i] /
 								tempMatrix[row_i][row_i];
@@ -765,10 +794,12 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 						}
 					}
 				}
+				//Если диагональный элемент == 0, то
 				else {
 					bool reduce = true;
-
-					for (int i = row_i + 1; i < row; ++i) {
+					// находим не нулевой элемент в данном столбце
+					for (int i = row_i + 1; i < column; ++i) {
+						// Меняем строку с ненулевым элементом с данной строкой
 						if (tempMatrix[i][row_i]) {
 							double* temp = tempMatrix[row_i];
 							tempMatrix[row_i] = tempMatrix[i];
@@ -777,12 +808,16 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 							break;
 						}
 					}
+					// Если не нашли не один ненулевой элемент в данном столбце
+					// то все элементы этого столбца == 0
 					if (reduce) {
+						// уменьшаем ранг
 						rank--;
-						for (int i = 0; i < row; ++i) {
+						for (int i = 0; i < column; ++i) {
 							tempMatrix[i][row_i] = tempMatrix[i][rank];
 						}
 					}
+					// Прогоняем еще раз эту строку
 					row_i--;
 				}
 			}
@@ -921,8 +956,8 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					int a;
 					int** matrix = new int* [row];
 					for (int i = 0; i < row; ++i) {
-						matrix[i] = new int[row];
-						for (int j = 0; j < row; ++j) {
+						matrix[i] = new int[column];
+						for (int j = 0; j < column; ++j) {
 							bool check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[i]->Cells[j]->Value), a);
 							if (!check) {
 								throw gcnew FormatException("В матрице присутствуют не целые числа");
@@ -952,6 +987,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					bool check;
 					for (int i = 0; i < column1; i++){
 						check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[0]->Cells[i]->Value), a);
+						// Проверки на не целые числа
 						if (!check) {
 							throw gcnew FormatException("В матрице присутствуют не целые числа");
 						}
@@ -985,6 +1021,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					int* matrixAinp = new int [3];
 					for (int i = 0; i < 3; ++i) {
 						bool check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[0]->Cells[i]->Value), a);
+						// Проверка на не целые числа
 						if (!check){
 							throw gcnew FormatException("В присутствуют не целые числа");
 						}
@@ -995,6 +1032,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					int* matrixBinp = new int [3];
 					for (int i = 0; i < 3; ++i) {
 						bool check = Int32::TryParse(System::Convert::ToString(matrixB->Rows[0]->Cells[i]->Value), b);
+						// Проверка на не целые числа
 						if (!check){
 							throw gcnew FormatException("В присутствуют не целые числа");
 						}
@@ -1029,6 +1067,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					int a, b;
 					bool check;
 					for (int i = 0; i < column1; i++){
+						// Проверки на не целые числа
 						check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[0]->Cells[i]->Value), a);
 						if (!check) {
 							throw gcnew FormatException("В матрице присутствуют не целые числа");
@@ -1061,6 +1100,7 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 					int a, b;
 					bool check;
 					for (int i = 0; i < column1; i++){
+						// Проверки на не целые числа
 						check = Int32::TryParse(System::Convert::ToString(matrixA->Rows[0]->Cells[i]->Value), a);
 						if (!check) {
 							throw gcnew FormatException("В матрице присутствуют не целые числа");
@@ -1080,5 +1120,6 @@ private: System::Windows::Forms::RadioButton^ rBtnUnitMatrix;
 			}
 
 		}
+
 };
 }
