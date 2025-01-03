@@ -50,7 +50,8 @@ namespace Winform1 {
 
 	private: System::Windows::Forms::TextBox^ txtInput;
 	private: System::Windows::Forms::TextBox^ txtOutput;
-	private: System::Windows::Forms::ErrorProvider^ errorProvider1;
+	private: System::Windows::Forms::ErrorProvider^ errPr;
+
 	private: System::ComponentModel::IContainer^ components;
 
 
@@ -74,8 +75,8 @@ namespace Winform1 {
 			this->btnCalculate = (gcnew System::Windows::Forms::Button());
 			this->txtInput = (gcnew System::Windows::Forms::TextBox());
 			this->txtOutput = (gcnew System::Windows::Forms::TextBox());
-			this->errorProvider1 = (gcnew System::Windows::Forms::ErrorProvider(this->components));
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider1))->BeginInit();
+			this->errPr = (gcnew System::Windows::Forms::ErrorProvider(this->components));
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errPr))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// lblInput
@@ -127,12 +128,13 @@ namespace Winform1 {
 				static_cast<System::Byte>(204)));
 			this->txtOutput->Location = System::Drawing::Point(294, 116);
 			this->txtOutput->Name = L"txtOutput";
+			this->txtOutput->ReadOnly = true;
 			this->txtOutput->Size = System::Drawing::Size(205, 29);
 			this->txtOutput->TabIndex = 4;
 			// 
-			// errorProvider1
+			// errPr
 			// 
-			this->errorProvider1->ContainerControl = this;
+			this->errPr->ContainerControl = this;
 			// 
 			// MyForm
 			// 
@@ -148,8 +150,7 @@ namespace Winform1 {
 			this->MinimizeBox = false;
 			this->Name = L"MyForm";
 			this->Text = L"‘акториал";
-			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider1))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errPr))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -157,7 +158,7 @@ namespace Winform1 {
 #pragma endregion
 	private: void ClearAll() { // очистка полей
 		this->txtOutput->Text = "ќшибка ввода";
-		errorProvider1->SetError(txtInput, String::Empty);
+		errPr->SetError(txtInput, String::Empty);
 	}
 	private: System::Void btnCalculate_Click(System::Object^ sender, System::EventArgs^ e) {
 		ClearAll();
@@ -166,18 +167,18 @@ namespace Winform1 {
 		bool result = Int64::TryParse(this->txtInput->Text, InputNumber);
 		// ввели не число
 		if (!result) {
-			errorProvider1->SetError(txtInput, "¬ведено не целое число");
+			errPr->SetError(txtInput, "¬ведено не целое число");
 		}
 		else {
 			if (InputNumber >= 20) {
-				errorProvider1->SetError(txtInput, "—лишком большое число");
+				errPr->SetError(txtInput, "—лишком большое число");
 			}
 			else{
 				// результат
 				long long OutputNumber = fact(InputNumber);
 				// отрицательное число
 				if (OutputNumber == -1) {
-					errorProvider1->SetError(txtInput, "¬ведено отрицательное число");
+					errPr->SetError(txtInput, "¬ведено отрицательное число");
 				}
 				// все нормально
 				else {
@@ -187,7 +188,5 @@ namespace Winform1 {
 			}
 		}
 	}
-private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
-}
 };
 }
