@@ -64,9 +64,12 @@ namespace Winform8 {
 	private: System::Windows::Forms::DataGridViewTextBoxColumn^ dataGridViewTextBoxColumn5;
 	private: System::Windows::Forms::Label^ lblInput;
 	private: System::Windows::Forms::Label^ lblOuput;
-	private: System::Windows::Forms::ErrorProvider^ errorProvider;
-	private: System::Windows::Forms::OpenFileDialog^ openFileDialog;
-	private: System::Windows::Forms::SaveFileDialog^ saveFileDialog;
+	private: System::Windows::Forms::ErrorProvider^ errPr;
+	private: System::Windows::Forms::OpenFileDialog^ openFile;
+	private: System::Windows::Forms::SaveFileDialog^ saveFile;
+
+
+
 	private: System::ComponentModel::IContainer^ components;
 
 
@@ -104,12 +107,12 @@ namespace Winform8 {
 			this->dataGridViewTextBoxColumn5 = (gcnew System::Windows::Forms::DataGridViewTextBoxColumn());
 			this->lblInput = (gcnew System::Windows::Forms::Label());
 			this->lblOuput = (gcnew System::Windows::Forms::Label());
-			this->errorProvider = (gcnew System::Windows::Forms::ErrorProvider(this->components));
-			this->openFileDialog = (gcnew System::Windows::Forms::OpenFileDialog());
-			this->saveFileDialog = (gcnew System::Windows::Forms::SaveFileDialog());
+			this->errPr = (gcnew System::Windows::Forms::ErrorProvider(this->components));
+			this->openFile = (gcnew System::Windows::Forms::OpenFileDialog());
+			this->saveFile = (gcnew System::Windows::Forms::SaveFileDialog());
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dGrInput))->BeginInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dGrOutput))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errPr))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// lblTask
@@ -298,13 +301,13 @@ namespace Winform8 {
 			this->lblOuput->TabIndex = 20;
 			this->lblOuput->Text = L"Вывод:";
 			// 
-			// errorProvider
+			// errPr
 			// 
-			this->errorProvider->ContainerControl = this;
+			this->errPr->ContainerControl = this;
 			// 
-			// openFileDialog
+			// openFile
 			// 
-			this->openFileDialog->FileName = L"openFileDialog1";
+			this->openFile->FileName = L"openFileDialog1";
 			// 
 			// MyForm
 			// 
@@ -324,7 +327,7 @@ namespace Winform8 {
 			this->Text = L"Work with file";
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dGrInput))->EndInit();
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->dGrOutput))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errPr))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -342,11 +345,11 @@ namespace Winform8 {
 
 		// Чтение данных
 		private: System::Void btnReadFile_Click(System::Object^ sender, System::EventArgs^ e) {
-			this->errorProvider->SetError(this->dGrInput, System::String::Empty);
+			this->errPr->SetError(this->dGrInput, System::String::Empty);
 			System::IO::Stream^ myStream;
 			btnSaveInFile->Enabled = true;
-			if (this->openFileDialog->ShowDialog() == System::Windows::Forms::DialogResult::OK) {
-				if ((myStream = openFileDialog->OpenFile()) != nullptr) {
+			if (this->openFile->ShowDialog() == System::Windows::Forms::DialogResult::OK) {
+				if ((myStream = openFile->OpenFile()) != nullptr) {
 					System::IO::StreamReader^ sw =
 						gcnew System::IO::StreamReader(myStream,
 							System::Text::Encoding::GetEncoding(1251)
@@ -377,7 +380,7 @@ namespace Winform8 {
 							strBuf = dateBuf[0] + "." + dateBuf[1] + "." + dateBuf[2];
 							bool res = DateTime::TryParse(strBuf, dateTemp);
 							if (!res) {
-								this->errorProvider->SetError(this->dGrInput, "Не корректная дата");
+								this->errPr->SetError(this->dGrInput, "Не корректная дата");
 								// Очистка таблиц
 								ClearTables();
 								return;
@@ -391,7 +394,7 @@ namespace Winform8 {
 								bool res = Int32::TryParse(arrBuf[j], grade);
 
 								if (!res || grade > 5 || grade < 2) {
-									this->errorProvider->SetError(this->dGrInput, "Не корректные оценки");
+									this->errPr->SetError(this->dGrInput, "Не корректные оценки");
 									// Очистка таблиц
 									ClearTables();
 									return;
@@ -433,9 +436,9 @@ namespace Winform8 {
 
 		// Удаление строки
 		private: System::Void btnRemoveRow_Click(System::Object^ sender, System::EventArgs^ e) {
-			this->errorProvider->SetError(this->dGrOutput, System::String::Empty);
+			this->errPr->SetError(this->dGrOutput, System::String::Empty);
 			if (!this->dGrOutput->CurrentRow) {
-				this->errorProvider->SetError(this->dGrOutput, "Нельзя удалить несуществующую строку");
+				this->errPr->SetError(this->dGrOutput, "Нельзя удалить несуществующую строку");
 				return;
 			}
 			if (!this->dGrOutput->CurrentRow->IsNewRow) {
@@ -446,13 +449,13 @@ namespace Winform8 {
 
 		// Перевод строки из таблицы в строку для вывода в файл
 		System::String^ dGrOutputToString(int i) {
-			this->errorProvider->SetError(this->dGrOutput, System::String::Empty);
+			this->errPr->SetError(this->dGrOutput, System::String::Empty);
 			System::String^ buff = "";
 			System::String^ strBuf = "";
 			// Проверяем ФИО
 			for (int j = 0; j < 3; ++j) {
 				if (System::Convert::ToString(this->dGrOutput->Rows[i]->Cells[j]->Value)->Trim() == "") {
-					this->errorProvider->SetError(this->dGrOutput, "Не корректное ФИО");
+					this->errPr->SetError(this->dGrOutput, "Не корректное ФИО");
 					return " ";
 				}
 			}
@@ -462,25 +465,25 @@ namespace Winform8 {
 			strBuf = System::Convert::ToString(this->dGrOutput->Rows[i]->Cells[3]->Value);
 			arrDate = strBuf->Split('.');
 			if (arrDate->Length != 3) {
-				this->errorProvider->SetError(this->dGrOutput, "Не корректная дата");
+				this->errPr->SetError(this->dGrOutput, "Не корректная дата");
 				return " ";
 			}
 			strBuf = arrDate[0] + "." + arrDate[1] + "." + arrDate[2];
 			if (!DateTime::TryParse(strBuf, dateBuf)) { 
-				this->errorProvider->SetError(this->dGrOutput, "Не корректная дата");
+				this->errPr->SetError(this->dGrOutput, "Не корректная дата");
 				return " ";
 			}
 			// Проверяем оценки
 			int grade;
 			array<System::String^>^ strGrade = System::Convert::ToString(this->dGrOutput->Rows[i]->Cells[4]->Value)->Trim()->Split(' ');
 			if (strGrade->Length != 5) {
-				this->errorProvider->SetError(this->dGrOutput, "Не корректное кол-во оценок (должно быть ровно 5)");
+				this->errPr->SetError(this->dGrOutput, "Не корректное кол-во оценок (должно быть ровно 5)");
 				return " ";
 			}
 			for (int j = 0; j < 5; ++j) {
 				bool res = Int32::TryParse(strGrade[j], grade);
 				if (!res || grade > 5 || grade < 3) {
-					this->errorProvider->SetError(this->dGrOutput, "Не корректные оценки (для зачета должны быть не меньше 3):" + this->dGrOutput->Rows[i]->Cells[4]->Value);
+					this->errPr->SetError(this->dGrOutput, "Не корректные оценки (для зачета должны быть не меньше 3):" + this->dGrOutput->Rows[i]->Cells[4]->Value);
 					return " ";
 				}
 			}
@@ -501,8 +504,8 @@ namespace Winform8 {
 		// Сохранение файла
 		private: System::Void btnSaveInFile_Click(System::Object^ sender, System::EventArgs^ e) {
 			System::IO::Stream^ myStream;
-			if (this->saveFileDialog->ShowDialog() == System::Windows::Forms::DialogResult::OK)
-				if ((myStream = saveFileDialog->OpenFile()) != nullptr) {
+			if (this->saveFile->ShowDialog() == System::Windows::Forms::DialogResult::OK)
+				if ((myStream = saveFile->OpenFile()) != nullptr) {
 					System::IO::StreamWriter^ sw =
 						gcnew System::IO::StreamWriter(myStream,
 							System::Text::Encoding::GetEncoding(1251)
