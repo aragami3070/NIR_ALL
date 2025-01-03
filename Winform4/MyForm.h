@@ -35,11 +35,12 @@ namespace Winform4 {
 			}
 		}
 	private: System::Windows::Forms::DataGridView^ ArDtGr;
+	private: System::Windows::Forms::Label^ lblTask;
 	protected:
 
 	protected:
 
-	private: System::Windows::Forms::Label^ lbl1;
+
 	private: System::Windows::Forms::Button^ AddBtn;
 	private: System::Windows::Forms::Button^ DelBtn;
 	private: System::Windows::Forms::TextBox^ XTxtBox;
@@ -61,12 +62,16 @@ namespace Winform4 {
 
 	private: System::Windows::Forms::Label^ lblSum;
 	private: System::Windows::Forms::TextBox^ MaxTxtBox;
+	private: System::Windows::Forms::Label^ lblMaxEl;
 
-	private: System::Windows::Forms::Label^ label1;
+
 	private: System::Windows::Forms::Button^ MaxBtn;
-	private: System::Windows::Forms::ErrorProvider^ errorProvider1;
-	private: System::Windows::Forms::ErrorProvider^ errorProvider2;
-	private: System::Windows::Forms::ErrorProvider^ errorProvider3;
+	private: System::Windows::Forms::ErrorProvider^ errPrX;
+	private: System::Windows::Forms::ErrorProvider^ errPrA;
+	private: System::Windows::Forms::ErrorProvider^ errPrB;
+
+
+
 	private: System::ComponentModel::IContainer^ components;
 
 
@@ -88,7 +93,7 @@ namespace Winform4 {
 			this->components = (gcnew System::ComponentModel::Container());
 			System::ComponentModel::ComponentResourceManager^ resources = (gcnew System::ComponentModel::ComponentResourceManager(MyForm::typeid));
 			this->ArDtGr = (gcnew System::Windows::Forms::DataGridView());
-			this->lbl1 = (gcnew System::Windows::Forms::Label());
+			this->lblTask = (gcnew System::Windows::Forms::Label());
 			this->AddBtn = (gcnew System::Windows::Forms::Button());
 			this->DelBtn = (gcnew System::Windows::Forms::Button());
 			this->XTxtBox = (gcnew System::Windows::Forms::TextBox());
@@ -101,15 +106,15 @@ namespace Winform4 {
 			this->SumTxtBox = (gcnew System::Windows::Forms::TextBox());
 			this->lblSum = (gcnew System::Windows::Forms::Label());
 			this->MaxTxtBox = (gcnew System::Windows::Forms::TextBox());
-			this->label1 = (gcnew System::Windows::Forms::Label());
+			this->lblMaxEl = (gcnew System::Windows::Forms::Label());
 			this->MaxBtn = (gcnew System::Windows::Forms::Button());
-			this->errorProvider1 = (gcnew System::Windows::Forms::ErrorProvider(this->components));
-			this->errorProvider2 = (gcnew System::Windows::Forms::ErrorProvider(this->components));
-			this->errorProvider3 = (gcnew System::Windows::Forms::ErrorProvider(this->components));
+			this->errPrX = (gcnew System::Windows::Forms::ErrorProvider(this->components));
+			this->errPrA = (gcnew System::Windows::Forms::ErrorProvider(this->components));
+			this->errPrB = (gcnew System::Windows::Forms::ErrorProvider(this->components));
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->ArDtGr))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider1))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider2))->BeginInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider3))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errPrX))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errPrA))->BeginInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errPrB))->BeginInit();
 			this->SuspendLayout();
 			// 
 			// ArDtGr
@@ -123,16 +128,16 @@ namespace Winform4 {
 			this->ArDtGr->Size = System::Drawing::Size(192, 268);
 			this->ArDtGr->TabIndex = 0;
 			// 
-			// lbl1
+			// lblTask
 			// 
-			this->lbl1->AutoSize = true;
-			this->lbl1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->lblTask->AutoSize = true;
+			this->lblTask->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->lbl1->Location = System::Drawing::Point(12, 19);
-			this->lbl1->Name = L"lbl1";
-			this->lbl1->Size = System::Drawing::Size(763, 80);
-			this->lbl1->TabIndex = 1;
-			this->lbl1->Text = resources->GetString(L"lbl1.Text");
+			this->lblTask->Location = System::Drawing::Point(12, 19);
+			this->lblTask->Name = L"lblTask";
+			this->lblTask->Size = System::Drawing::Size(763, 80);
+			this->lblTask->TabIndex = 1;
+			this->lblTask->Text = resources->GetString(L"lblTask.Text");
 			// 
 			// AddBtn
 			// 
@@ -261,16 +266,16 @@ namespace Winform4 {
 			this->MaxTxtBox->Size = System::Drawing::Size(289, 26);
 			this->MaxTxtBox->TabIndex = 15;
 			// 
-			// label1
+			// lblMaxEl
 			// 
-			this->label1->AutoSize = true;
-			this->label1->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
+			this->lblMaxEl->AutoSize = true;
+			this->lblMaxEl->Font = (gcnew System::Drawing::Font(L"Microsoft Sans Serif", 12, System::Drawing::FontStyle::Regular, System::Drawing::GraphicsUnit::Point,
 				static_cast<System::Byte>(204)));
-			this->label1->Location = System::Drawing::Point(290, 372);
-			this->label1->Name = L"label1";
-			this->label1->Size = System::Drawing::Size(183, 40);
-			this->label1->TabIndex = 14;
-			this->label1->Text = L"Номера максимальных\r\nнечетных элементов:";
+			this->lblMaxEl->Location = System::Drawing::Point(290, 372);
+			this->lblMaxEl->Name = L"lblMaxEl";
+			this->lblMaxEl->Size = System::Drawing::Size(183, 40);
+			this->lblMaxEl->TabIndex = 14;
+			this->lblMaxEl->Text = L"Номера максимальных\r\nнечетных элементов:";
 			// 
 			// MaxBtn
 			// 
@@ -284,17 +289,17 @@ namespace Winform4 {
 			this->MaxBtn->UseVisualStyleBackColor = true;
 			this->MaxBtn->Click += gcnew System::EventHandler(this, &MyForm::MaxBtn_Click);
 			// 
-			// errorProvider1
+			// errPrX
 			// 
-			this->errorProvider1->ContainerControl = this;
+			this->errPrX->ContainerControl = this;
 			// 
-			// errorProvider2
+			// errPrA
 			// 
-			this->errorProvider2->ContainerControl = this;
+			this->errPrA->ContainerControl = this;
 			// 
-			// errorProvider3
+			// errPrB
 			// 
-			this->errorProvider3->ContainerControl = this;
+			this->errPrB->ContainerControl = this;
 			// 
 			// MyForm
 			// 
@@ -302,7 +307,7 @@ namespace Winform4 {
 			this->AutoScaleMode = System::Windows::Forms::AutoScaleMode::Font;
 			this->ClientSize = System::Drawing::Size(780, 511);
 			this->Controls->Add(this->MaxTxtBox);
-			this->Controls->Add(this->label1);
+			this->Controls->Add(this->lblMaxEl);
 			this->Controls->Add(this->MaxBtn);
 			this->Controls->Add(this->SumTxtBox);
 			this->Controls->Add(this->lblSum);
@@ -315,15 +320,15 @@ namespace Winform4 {
 			this->Controls->Add(this->XTxtBox);
 			this->Controls->Add(this->DelBtn);
 			this->Controls->Add(this->AddBtn);
-			this->Controls->Add(this->lbl1);
+			this->Controls->Add(this->lblTask);
 			this->Controls->Add(this->ArDtGr);
 			this->Name = L"MyForm";
 			this->Text = L"Обработка табличных данных. Часть 1.";
 			this->Load += gcnew System::EventHandler(this, &MyForm::MyForm_Load);
 			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->ArDtGr))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider1))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider2))->EndInit();
-			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errorProvider3))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errPrX))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errPrA))->EndInit();
+			(cli::safe_cast<System::ComponentModel::ISupportInitialize^>(this->errPrB))->EndInit();
 			this->ResumeLayout(false);
 			this->PerformLayout();
 
@@ -333,9 +338,9 @@ namespace Winform4 {
 	private: void ClearAll() { 
 		this->SumTxtBox->Text = "";
 		this->MaxTxtBox->Text = "";
-		errorProvider1->SetError(XTxtBox, String::Empty);
-		errorProvider2->SetError(ATxtBox, String::Empty);
-		errorProvider3->SetError(BTxtBox, String::Empty);
+		errPrX->SetError(XTxtBox, String::Empty);
+		errPrA->SetError(ATxtBox, String::Empty);
+		errPrB->SetError(BTxtBox, String::Empty);
 	}
 
 	private: System::Void MyForm_Load(System::Object^ sender, System::EventArgs^ e) {
@@ -359,7 +364,7 @@ namespace Winform4 {
 		bool parseX = Int64::TryParse(this->XTxtBox->Text, InputX);
 		// ввели не число
 		if (!parseX) {
-			errorProvider1->SetError(XTxtBox, "X не число");
+			errPrX->SetError(XTxtBox, "X не число");
 		}
 		else {
 			ArDtGr->Rows->Add();
@@ -384,19 +389,19 @@ namespace Winform4 {
 		bool parseA = Int64::TryParse(this->ATxtBox->Text, InputA);
 		bool parseB = Int64::TryParse(this->BTxtBox->Text, InputB);
 		if (!parseA) {
-			errorProvider2->SetError(ATxtBox, "A не число");
+			errPrA->SetError(ATxtBox, "A не число");
 			if (!parseB) {
-				errorProvider3->SetError(BTxtBox, "B не число");
+				errPrB->SetError(BTxtBox, "B не число");
 			}
 		}
 		else if (!parseB) {
-			errorProvider3->SetError(BTxtBox, "B не число");
+			errPrB->SetError(BTxtBox, "B не число");
 		}
 		else if (InputA < 0) {
-			errorProvider2->SetError(ATxtBox, "А не может быть отрицательным");
+			errPrA->SetError(ATxtBox, "А не может быть отрицательным");
 		}
 		else if (InputB > ArDtGr->RowCount -1) {
-			errorProvider3->SetError(BTxtBox, "B больше чем кол-во элементов");
+			errPrB->SetError(BTxtBox, "B больше чем кол-во элементов");
 		}
 		else {
 			// подсчет среднего арифметического
